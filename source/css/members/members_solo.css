@@ -1,13 +1,12 @@
-img
-    {
-    width: 27%;
-    margin: 0;
-    transition-property: width;
-    transition-duration: .7s;
-    }
 
-    footer{text-align: center;}
-    
-    .hover:hover{
-        width:30%
-    }
+table{
+    display: inline;
+}
+
+main{margin-top: 5%;
+text-align: center;}
+
+img:hover{
+opacity: 0.7;
+    transition-duration: 0.5s;
+}
