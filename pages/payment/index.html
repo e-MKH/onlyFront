@@ -1,0 +1,90 @@
+<!--
+    @author:우연정
+    @date: 2024.04.21
+    @description : 결제 메인화면 
+
+  DATE              AUTHOR             NOTE
+  -----------------------------------------------------------
+  2024/04/21        우연정            최초 생성
+ 
+-->
+<!-- 1차 -> 결제버튼 후 pages/index.html 으로 이동
+        결제 할 상품 목록, 결제 총 금액, 결제방법  
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 메인화면</title>
+    <link rel="stylesheet" href="../../source/css/payment.css">
+    <link rel="stylesheet" href="../../source/css/logo.css">
+    <script src="https://kit.fontawesome.com/30b28e001e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./index.html"> <img src="/source/images/LOGO.svg" class="logo"></a>
+        </div>
+
+        <nav class="do">
+            <a href="../menu/menu.html" class="fa-solid fa-bars "></i></a>
+        </nav>
+    </header>
+    <div class="container">
+        <table class="product-list">
+            <thead>
+                <tr>
+                    <th>제품 사진</th>
+                    <th>상품명</th>
+                    <th>수량</th>
+                    <th>가격</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="product">
+                    <td class="product-image">
+                        <img src="../../source/images/light_stick_Danielle.png" alt="light_stick_Danielle">
+                    </td>
+                    <td class="product-info">
+                        <p>상품명: Danielle 라이트 스틱</p>
+                    </td>
+                    <td>1</td>
+                    <td>₩22,000</td>
+                </tr>
+                <tr class="product">
+                    <td class="product-image">
+                        <img src="../../source/images/light_stick_Danielle.png" alt="light_stick_Danielle">
+                    </td>
+                    <td class="product-info">
+                        <p>상품명: Danielle 라이트 스틱</p>
+                    </td>
+                    <td>1</td>
+                    <td>₩22,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="total-amount">결제 총 금액
+                        ₩22,000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div id="payment-methods">
+            <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+            <label for="credit-card"><img src="../../source/images/credit-card-solid.svg" alt="신용카드"> 신용카드</label>
+            <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+            <label for="bank-transfer"><img src="../../source/images/money-check-dollar-solid.svg" alt="계좌이체">
+                계좌이체</label>
+            <input type="radio" id="easy-payment" name="payment-method" value="easy-payment">
+            <label for="easy-payment"><img src="../../source/images/money-bill-solid.svg" alt="간편결제"> 간편결제</label>
+        </div>
+
+        <a href="../../pages/index.html" id="checkout-button">결제하기</a>
+    </div>
+</body>
+
+</html>

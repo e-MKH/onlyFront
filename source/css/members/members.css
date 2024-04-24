@@ -1,0 +1,37 @@
+        footer{
+            text-align: center;
+        }
+        
+        main{
+            text-align: center;
+        }
+
+        #member_profile {
+            width: 90%;
+            transition-property: width;
+            transition-duration: 0.7s;
+        }
+        #member_profile{
+            overflow:hidden;
+            position: relative;
+        }
+
+        
+
+        #member_profile:hover{
+            width:93%;
+        }
+        
+        .solo_picture {
+            width: 15%;
+            margin: 1.6%;
+            transition-property: width;
+            transition-duration: 0.7s;
+        }
+        
+        .solo_picture:hover {
+            opacity: 0.7;
+            width: 17%;
+        }
+
+

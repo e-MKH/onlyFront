@@ -1,0 +1,57 @@
+<!-- 
+    @author:우연정
+    @date: 2024.04.21
+    @description : 로그인 화면 
+
+  DATE              AUTHOR             NOTE
+  -----------------------------------------------------------
+  2024/04/21        우연정            최초 생성
+ 
+-->
+<!-- 
+    1차 아이디 입력창/ 비밀번호영역/ 로그인 버튼/ 회원가입버튼
+        -> 로그인 버튼 시 홈화면으로 이동.
+        -> 회원가입버튼 클릭시 - sign_up.html로 이동
+    2차 개발 > 아이디 비밀번호 찾기
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="../../source/css/login.css">
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <!-- <img src="../image/main_backgound.jpg"> -->
+
+        <div id="login_wrap">
+            <div>
+                <form class="login_form" novalidate>
+                    <div id="login_title">Login</div>
+                    <div>
+                        <input type="text" placeholder="Email" name="userId" id="userId" />
+                    </div>
+                    <div>
+
+                        <input type="password" placeholder="Password" id="userPw" name="userPw" />
+                    </div>
+                    <div class="btn_wrap">
+                        <a href="../../pages/index.html">Login</a>
+                        <!-- <a href="../../pages/index.html"><button class="btn_login">Login</button></a>
+                        <a href="../../pages/auth/sign_up.html"> <button class="btn_login">New Account</button></a> -->
+                    </div>
+                    <div class="btn_wrap">
+                        <a href="../../pages/auth/sign_up.html">New Account</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

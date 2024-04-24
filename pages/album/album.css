@@ -1,0 +1,25 @@
+
+
+* {
+	text-align: center;
+}
+
+div {
+	display: inline-block;
+	width: 80%;
+}
+
+hr {
+	width: 70%;
+}
+
+img {
+	width: 20%;
+
+	transition-property: width;
+	transition-duration: 1s;
+}
+
+img:hover {
+	width: 25%;
+}

@@ -1,0 +1,33 @@
+body {
+    background: url(../images/main_backgound.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.logo {
+    width: 30%;
+
+}
+
+header>div {
+    text-align: center;
+}
+
+
+
+
+
+.do a {
+    font-size: 150%;
+}
+
+nav a{
+    font-size: 200%;
+    transition-property: font-size;
+    transition-duration: .5s;
+}
+
+.do a:hover {
+    font-size: 300%;
+}

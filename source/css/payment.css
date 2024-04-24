@@ -1,0 +1,113 @@
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-list {
+    background-color: #fff;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-list th,
+.product-list td {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-list td img {
+    filter: opacity(1);
+    /* 이미지의 투명도를 100%로 설정 */
+    max-width: 100px;
+    height: auto;
+}
+
+.total-amount {
+    text-align: right;
+}
+
+#payment-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#payment-methods label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#payment-methods label img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+
+.product-list {
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    /* 하얀색 배경에 70% 투명도 */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.product {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* 상품 간의 구분선 */
+}
+
+.product td {
+    padding: 10px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    /* 투명도 조절 (필요한 만큼 조절) */
+}
+
+.product-info {
+    opacity: 0.9;
+
+    /* 투명도 조절 (필요한 만큼 조절) */
+
+}
+
+
+
+.total-amount {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+thead tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* #checkout-button {
+    width: calc(100%);
+   
+    margin: 0 auto;
+} */
+
+
+#checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(166, 163, 163);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}

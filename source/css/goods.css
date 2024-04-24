@@ -1,0 +1,102 @@
+:root {
+    text-align: center;
+}
+
+* {
+    margin: 0px;
+}
+
+
+
+
+ul {
+    list-style: none;
+}
+
+#goods_title {
+    padding-top: 10%;
+    text-align: center;
+
+}
+
+#goods_wrap {
+    line-height: normal;
+    margin-top: 10%;
+    width: 100vw;
+    text-align: center;
+}
+
+#goods_wrap>img {
+    display: inline;
+}
+
+.goods_img:hover {
+    /* opacity: 0.7; */
+    width: 17%;
+}
+
+.goods_img {
+    width: 15%;
+    transition-property: width;
+    transition-duration: 0.8s;
+}
+
+.goods_explain {
+    display: inline-block;
+    /* vertical-align: middle; */
+    width: 75vw;
+    text-align: center;
+
+}
+
+div>p {
+    /* display: inline-block; */
+    background-color: aliceblue;
+    opacity: .8;
+    white-space: pre-wrap;
+
+}
+
+/* ============ detail page =====================  */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+
+}
+
+.details-container {
+    flex: 2;
+    /* 이미지 컨테이너의 두 배의 공간을 차지함. */
+}
+
+.image-container .goods_img {
+    max-width: 100%;
+    /* 이미지가 컨테이너를 넘지 않도록함.*/
+}
+
+.product-name,
+.product-price,
+.product-quantity {
+
+    margin: 5px 0;
+    /* 세부 정보 사이에 일정한 간격을 추가 */
+}
+
+.cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    /* 버튼에 패딩을 추가합니다*/
+    background-color: #ff6200bb;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}

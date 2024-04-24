@@ -1,0 +1,48 @@
+body {
+    background: url(../images/giro_image/minji/minji2.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-color: black;
+    
+}
+main{
+    width: 30%;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+    margin-top: 7%;
+}
+
+li{
+    margin-bottom: 10%;
+    font-size: 30px;
+    color: gainsboro;
+    transition-property: font-size;
+    transition-duration: .5s;
+    font-weight: bold;
+}
+a{text-decoration-line: none;}
+
+.icon a{
+    display: inline-block;
+    font-size: 25px;
+    transition-property: font-size;
+    transition-duration: 1s;
+    color: gray;
+    margin: 3px;
+    opacity: .7; }
+
+
+.icon a:hover{
+    font-size: 30px;
+    color: white;
+    opacity: 1;
+}
+
+li:hover{
+    font-size: 35px;
+    color: firebrick;}
+
+   

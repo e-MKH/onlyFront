@@ -1,0 +1,104 @@
+<!--     
+    @author:우연정
+    @date: 2024.04.21
+    @description : 장바구니화면
+
+  DATE              AUTHOR             NOTE
+  -----------------------------------------------------------
+  2024/04/21        우연정            최초 생성
+ 
+-->
+<!-- 1차 -> 결제 버튼 클릭시 payment/index.html 화면으로 이동
+            - 상품리스트/ 각 상품 체크박스 ,이미지, 상품명, 금액 , 설명, 수량, 결제 버튼
+            - 테이블로 묶기
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="../source/css/cart.css">
+    <link rel="stylesheet" href="../../source/css/logo.css">
+	<script src="https://kit.fontawesome.com/30b28e001e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="./index.html"> <img src="/source/images/LOGO.svg" class="logo"></a>
+        </div>
+        
+        <nav class="do">
+            <a href="../menu/menu.html" class="fa-solid fa-bars "></i></a>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="product">
+            <input type="checkbox" class="checkbox">
+            <div class="product-image">
+                <img src="../../source/images/light_stick_Danielle.png" alt="light_stick_Danielle">
+            </div>
+            <div class="product-info">
+                <p>상품명: Danielle 라이트 스틱</p>
+                <p>수량: 1</p>
+                <p>가격: 22,000 원</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <input type="checkbox" class="checkbox">
+            <div class="product-image">
+                <img src="../../source/images/light_stick_haerin.png" alt="light_stick_haerin">
+            </div>
+            <div class="product-info">
+                <p>상품명: Haerin 라이트 스틱</p>
+                <p>수량: 2</p>
+                <p>가격: 22,000 원</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <input type="checkbox" class="checkbox">
+            <div class="product-image">
+                <img src="../../source/images/light_stick_hanni.png" alt="light_stick_hanni">
+            </div>
+            <div class="product-info">
+                <p>상품명: Hanni 라이트 스틱</p>
+                <p>수량: 1</p>
+                <p>가격:22,000 원</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <input type="checkbox" class="checkbox">
+            <div class="product-image">
+                <img src="../../source/images/light_stick_Hyein.png" alt="light_stick_Hyein">
+            </div>
+            <div class="product-info">
+                <p>상품명: Hyein 라이트 스틱</p>
+                <p>수량: 1</p>
+                <p>가격: 22,000 원</p>
+            </div>
+        </div>
+
+        <div class="product">
+            <input type="checkbox" class="checkbox">
+            <div class="product-image">
+                <img src="../../source/images/light_stick_minji.png" alt="light_stick_minji">
+                <div class="product-info">
+                    <p>상품명: Minji 라이트 스틱</p>
+                    <p>수량: 3</p>
+                    <p>가격: 22,000 원</p>
+                </div>
+            </div>
+        </div>
+        <a href="../payment/index.html" id="checkout-button">결제하기</a>
+        <a href="../goods/index.html" id="checkout-button">쇼핑하기</a>
+    </div>
+</body>
+
+</html>

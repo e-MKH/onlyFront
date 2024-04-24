@@ -1,0 +1,64 @@
+<<<<<<< HEAD
+/* body {
+
+    background: url("../images/main_backgound.jpg") no-repeat fixed center/cover;
+
+} */
+=======
+>>>>>>> main
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+
+}
+
+.product-image {
+    display: inline-block;
+    margin-right: 20px;
+    flex: 0 0 50%;
+
+}
+
+.product-image img {
+    vertical-align: middle;
+    max-width: 50%;
+    height: auto;
+}
+
+.product-info {
+    display: inline-block;
+    flex: 1;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+#checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: silver;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* 내부 padding 포함하여 너비 계산 */
+}
