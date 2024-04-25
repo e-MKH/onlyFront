@@ -58,7 +58,92 @@ div>p {
 }
 
 /* ============ detail page =====================  */
+
 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#detail_title {
+    margin: 10% 0 0 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.details-container {
+    flex: 2;
+}
+
+.image-container .goods_img {
+    width: 100%;
+    /* 이미지를 컨테이너에 맞게 조정 */
+    height: auto;
+    /* 가로 비율에 맞추어 세로 비율 자동 조정 */
+    max-width: 100%;
+    /* 이미지가 컨테이너를 넘지 않도록 최대 너비 지정 */
+    opacity: 1;
+    /* 투명도 적용 해제 */
+    border: 1px solid silver;
+
+}
+
+table {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    /* 테이블 배경에 투명도 적용하지 않음 */
+    width: 100%;
+
+}
+
+th {
+    background-color: rgba(255, 255, 255, 1);
+    /* 테이블 헤더 배경에 투명도 적용하지 않음 */
+    padding: 20px;
+    border-right: silver;
+}
+
+th,
+td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product-name,
+.product-price,
+.product-quantity {
+    margin: 5px 0;
+}
+
+.cart-button,
+.continue-shopping-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.continue-shopping-button {
+    background-color: rgb(193, 199, 202);
+}
+
+.cart-button {
+    background-color: lightblue;
+}
+
+
+/*===============================================*/
+/* .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,33 +155,33 @@ div>p {
     flex: 1;
     margin-right: 20px;
 
-}
+} */
 
-.details-container {
+/* .details-container {
     flex: 2;
-    /* 이미지 컨테이너의 두 배의 공간을 차지함. */
-}
+    /* 이미지 컨테이너의 두 배의 공간을 차지함. 
+} */
 
-.image-container .goods_img {
+/* .image-container .goods_img {
     max-width: 100%;
-    /* 이미지가 컨테이너를 넘지 않도록함.*/
-}
+    /* 이미지가 컨테이너를 넘지 않도록함.
+} */
 
-.product-name,
+/* .product-name,
 .product-price,
 .product-quantity {
 
     margin: 5px 0;
-    /* 세부 정보 사이에 일정한 간격을 추가 */
-}
-
+    /* 세부 정보 사이에 일정한 간격을 추가 
+} */
+/* 
 .cart-button {
     display: inline-block;
     padding: 10px 20px;
-    /* 버튼에 패딩을 추가합니다*/
+    /* 버튼에 패딩을 추가합니다
     background-color: #ff6200bb;
     color: #fff;
     text-decoration: none;
     border: none;
     border-radius: 5px;
-}
+} */
