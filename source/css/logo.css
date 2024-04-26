@@ -7,6 +7,7 @@ body {
 
 .logo {
     width: 400px;
+    margin-top: 20px;
 }
 
 header>div {
@@ -15,17 +16,17 @@ header>div {
 
 
 .do a {
-    font-size: 5vh;
+    font-size: 30px;
 }
 
 header nav a {
-    font-size: 200%;
+    font-size: 150%;
     transition-property: font-size;
     transition-duration: .5s;
 }
 
 .do a:hover {
-    font-size: 300%;
+    font-size: 250%;
 }
 
 .do {
