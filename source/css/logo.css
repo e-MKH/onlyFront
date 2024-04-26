@@ -2,10 +2,11 @@ body {
     background: url(../images/main_backgound.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
 }
 
 .logo {
-    width: 30%;
+    width: 400px;
 }
 
 header>div {
@@ -14,10 +15,10 @@ header>div {
 
 
 .do a {
-    font-size: 150%;
+    font-size: 5vh;
 }
 
-nav a{
+header nav a {
     font-size: 200%;
     transition-property: font-size;
     transition-duration: .5s;
@@ -25,4 +26,10 @@ nav a{
 
 .do a:hover {
     font-size: 300%;
+}
+
+.do {
+    position: fixed;
+    top: 20vh;
+    left: 15px;
 }
