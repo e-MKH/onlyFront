@@ -13,13 +13,14 @@ main hr {
 
 main img {
 	width: 250px;
-
-	transition-property: width;
 	transition-duration: 1s;
+
+	margin: 14px;
 }
 
 main img:hover {
-	width: 270px;
+	transform: scale(1.1);
+	transition-duration: 1s;
 }
 
 main h1 {

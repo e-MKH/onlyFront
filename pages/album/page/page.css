@@ -21,7 +21,7 @@ main span {
     padding: 4%;
 
     display: inline-block;
-    background-color: rgba(240, 255, 255, 0.5);
+    background-color: rgba(240, 255, 255, 0.7);
     width: 70%;
     min-width: 400px;
 
@@ -35,9 +35,8 @@ main span {
     font-weight: bold;
 
     /* border-radius: 28px; */
-
-
 }
+
 
 main hr {
     width: 75%;
