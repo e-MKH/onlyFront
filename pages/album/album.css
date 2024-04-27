@@ -12,14 +12,14 @@ main hr {
 }
 
 main img {
-	width: 20%;
+	width: 250px;
 
 	transition-property: width;
 	transition-duration: 1s;
 }
 
 main img:hover {
-	width: 25%;
+	width: 270px;
 }
 
 main h1 {

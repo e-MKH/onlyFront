@@ -5,7 +5,7 @@ main {
 
 main video,
 main img {
-    margin-top: 3%;
+    margin-top: 4%;
     margin-bottom: 1%;
     width: 400px;
 }
@@ -22,7 +22,7 @@ main span {
 
     display: inline-block;
     background-color: rgba(240, 255, 255, 0.5);
-    width: 75%;
+    width: 70%;
     min-width: 400px;
 
     font-size: 14px;
@@ -36,9 +36,9 @@ main span {
 
     /* border-radius: 28px; */
 
-    
+
 }
 
-main hr{
+main hr {
     width: 75%;
 }
