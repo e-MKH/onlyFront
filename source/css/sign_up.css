@@ -1,0 +1,183 @@
+.sign_wrap {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 70vh;
+    margin: 5vh auto;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+
+}
+
+/* 각 div 공통 설정 */
+.sign_form {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.sign_form>div {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+
+
+}
+
+/* .sign_form #name{
+    width: 30%;
+    
+} */
+
+.sign_form>div input {
+    width: 60%;
+    height: 42px;
+    margin: 10px 0;
+    border: 0.3px solid silver;
+    /* border:5px solid silver; */
+    border-radius: 5px;
+    /* outline: 3px solid; */
+}
+
+.phoneNum {
+    display: inline-flex;
+    width: 60%;
+}
+
+.phoneNum>span {
+    padding-top: 2%;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sign_form>div label {
+    background-color: white;
+    width: auto;
+    padding: 0 10px;
+    font-size: 12px;
+    position: absolute;
+    left: 20%;
+    font-weight: bold;
+}
+
+.sign_title {
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: gray;
+    font-weight: bolder;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn_wrap,
+.sign_form {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.btn_wrap button {
+    position: relative;
+    border: none;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+.btn_wrap a {
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* padding: 5px 10px; */
+    background-color: lightblue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    /* 배경색 변경 시 부드럽게 전환 */
+}
+
+/* 버튼 링크에 호버 효과 */
+.btn_wrap button:hover {
+    background-color: rgb(84, 178, 209)
+        /* 호버 시 배경색 변경 */
+}
+
+
+.sign_form input {
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+.sign_form .agreement input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* 체크박스와 라벨을 가로로 정렬 */
+.sign_form .agreement label {
+    padding: 0px;
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    bottom: 5px;
+    margin-right: 20px;
+    /* 라벨의 오른쪽 여백 */
+}
+
+/* 약관 내용을 기본적으로 숨김 */
+.agreement_content {
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 약관 label에 hover 시 약관 내용을 나타나게 함 */
+
+.agreement:hover .agreement_content {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.agreement_content p {
+    text-align: justify;
+    overflow: auto
+}
+
+.agreement_content ul {
+    text-align: left;
+}
+
+.agreement>input[value=checked] .agreement_content:hover {
+    display: none;
+}
+
+.address_wrap {
+    position: relative;
+    display: inline-block;
+}
+
+/* 주소 찾기 버튼 스타일 */
+#findAddressBtn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.address_wrap input[type="text"] {
+    width: calc(100% - 200px);
+}
+
+.address_wrap button {
+    position: absolute;
+    right: 100px;
+    top: 35%;
+    width: 100px;
+}
