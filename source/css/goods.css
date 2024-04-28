@@ -1,53 +1,91 @@
-:root {
-    text-align: center;
-}
-
-* {
+/* * {
     margin: 0px;
+    padding: 0ox;
 }
 
-
-
-
-ul {
-    list-style: none;
-}
-
-#goods_title {
-    padding-top: 10%;
+.goods_container {
     text-align: center;
-
+    background-color: #fff;
+    opacity: 0.7;
 }
 
-#goods_wrap {
+.goods_wrap {
+    position: relative;
     line-height: normal;
-    margin-top: 10%;
     width: 100vw;
     text-align: center;
+    background-color: #fff;
+    opacity: 1;
+
 }
 
-#goods_wrap>img {
+.goods_wrap>img {
     display: inline;
 }
 
 .goods_img:hover {
-    /* opacity: 0.7; */
+
     width: 17%;
 }
 
 .goods_img {
     width: 15%;
-    transition-property: width;
+    transition-property: scale(1.1);
     transition-duration: 0.8s;
+} */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.goods_explain {
-    display: inline-block;
-    /* vertical-align: middle; */
-    width: 75vw;
+.goods_container {
+    max-width: 80vw;
+    margin: 0 auto;
     text-align: center;
+    background-color: #fff;
+    opacity: 0.9;
+}
+
+.goods_wrap {
+    width: 80%;
+    background-color: #fff;
+}
+
+.goods_1,
+.goods_2 {
+    position: relative;
+    left: 5%;
+    line-height: normal;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.goods_1 img {
+    width: 100%;
+    transition-property: transform;
+    /* scale 대신 transform 사용 */
+    transition-duration: 0.8s;
+    filter: opacity(1);
+}
+
+.tab_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tab_wrap {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
 
 }
+
+.tab {}
+
 
 div>p {
     /* display: inline-block; */
@@ -57,15 +95,48 @@ div>p {
 
 }
 
-/* ============ detail page =====================  */
+/* =====================tab 영역 ================== */
+.tab_wrap {
+    margin-top: 20px;
+    position: relative;
 
+    display: flex;
+    width: 100vw;
+    height: 30px;
+    background-color: #fff;
+
+}
+
+.tab {
+    width: 5%;
+    border: 1px solid/ white;
+}
+
+/* ============ detail page =====================  */
 .container {
+    max-width: 850px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+
+/*  {
+
+} */
+
+.detail_wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 800px;
+    box-sizing: border-box;
+    padding: 10px;
     margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
 }
 
 #detail_title {
@@ -76,6 +147,7 @@ div>p {
 .image-container {
     flex: 1;
     margin-right: 20px;
+
 }
 
 .details-container {
@@ -84,13 +156,9 @@ div>p {
 
 .image-container .goods_img {
     width: 100%;
-    /* 이미지를 컨테이너에 맞게 조정 */
     height: auto;
-    /* 가로 비율에 맞추어 세로 비율 자동 조정 */
     max-width: 100%;
-    /* 이미지가 컨테이너를 넘지 않도록 최대 너비 지정 */
     opacity: 1;
-    /* 투명도 적용 해제 */
     border: 1px solid silver;
 
 }
@@ -98,16 +166,14 @@ div>p {
 table {
     margin-top: 30px;
     background-color: rgba(255, 255, 255, 1);
-    /* 테이블 배경에 투명도 적용하지 않음 */
     width: 100%;
 
 }
 
 th {
     background-color: rgba(255, 255, 255, 1);
-    /* 테이블 헤더 배경에 투명도 적용하지 않음 */
     padding: 20px;
-    border-right: silver;
+    border-right: 1px solid silver;
 }
 
 th,
@@ -133,55 +199,39 @@ td {
     margin-right: 10px;
 }
 
+.button-container {
+    position: relative;
+    left: calc(50% - 10px);
+}
+
 .continue-shopping-button {
-    background-color: rgb(193, 199, 202);
+    background-color: lightgray;
 }
 
 .cart-button {
     background-color: lightblue;
 }
 
-
-/*===============================================*/
-/* .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
+.continue-shopping-button:hover {
+    background-color: rgb(193, 199, 202);
 }
 
-.image-container {
-    flex: 1;
-    margin-right: 20px;
+.cart-button:hover {
+    background-color: rgb(84, 178, 209)
+}
 
-} */
 
-/* .details-container {
-    flex: 2;
-    /* 이미지 컨테이너의 두 배의 공간을 차지함. 
-} */
-
-/* .image-container .goods_img {
-    max-width: 100%;
-    /* 이미지가 컨테이너를 넘지 않도록함.
-} */
-
-/* .product-name,
-.product-price,
-.product-quantity {
-
-    margin: 5px 0;
-    /* 세부 정보 사이에 일정한 간격을 추가 
-} */
-/* 
-.cart-button {
-    display: inline-block;
-    padding: 10px 20px;
-    /* 버튼에 패딩을 추가합니다
-    background-color: #ff6200bb;
-    color: #fff;
-    text-decoration: none;
-    border: none;
+/* 상세설명 CSS */
+.explain_product {
+    max-width: 800px;
+    margin: 0 auto 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid silver;
     border-radius: 5px;
-} */
+}
+
+.explain_product h2 {
+    margin-bottom: 10px;
+}
