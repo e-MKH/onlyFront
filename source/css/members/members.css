@@ -1,14 +1,17 @@
-        footer{
-            text-align: center;
-        }
+        footer{display:inline;
+                margin-left: 5vw;
+            /* flex-direction: row; */
+            /* justify-content: space-evenly; */
+                }
+
         
         main{
-            text-align: center;
+            /* text-align: center; */
+            margin-left: 5vw;
         }
 
         #member_profile {
-            width: 90%;
-            transition-property: width;
+            width: 90vw;
             transition-duration: 0.7s;
         }
         #member_profile{
@@ -18,20 +21,20 @@
 
         
 
-        #member_profile:hover{
-            width:93%;
+        /* #member_profile:hover{
+            transform: scale(1.05);
+        } */
+        
+        video {
+            width: 15vw;
+            /* display:flex; */
+            margin: 1.5vw;
+            /* transition-duration: 0.7s; */
         }
         
-        .solo_picture {
-            width: 15%;
-            margin: 1.6%;
-            transition-property: width;
-            transition-duration: 0.7s;
-        }
-        
-        .solo_picture:hover {
+        /* .solo_picture:hover {
             opacity: 0.7;
-            width: 17%;
-        }
+            transform: scale(1.1);
+        } */
 
 
