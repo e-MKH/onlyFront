@@ -1,16 +1,38 @@
-    *{
+    main{
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 10vh;
+        align-items: center;
+    }
+
+    
+    video{
+        width: 15vw;
+        transition: 0.7s;
+    }
+
+    video:hover{
+        transform: scale(1.4);
+    }
+
+
+
+    
+   /* *{
         margin: 0;
         padding: 0;
     }
 
     .main_table img{
-        width:65vw;
+        width:55vw;
         height: 45vh;
     }
 
     tr img{
-        width: 30vw;
-        height: 40vh;
+        width: 25vw;
+        height: 30vh;
     }
 
     table{
@@ -23,43 +45,43 @@
 
     .main_table{
         position: absolute;
-        left:10vw;
+        left:20vw;
         top: 25vh;
     }
     
     .side_table1{
         position: absolute;
-        left: 10vw;
+        left: 20vw;
         top: 85vh;
     }
 
     .side_table2{
         position: absolute;
-        left: 45vw;
+        left: 50vw;
         top: 85vh;
     }
 
     .side_table3{
         position: absolute;
-        left: 10vw;
+        left: 20vw;
         top: 135vh;
     }
 
     .side_table4{
         position: absolute;
-        left: 45vw;
+        left: 50vw;
         top: 135vh;
     }
 
     .side_table5{
         position: absolute;
-        left: 10vw;
+        left: 20vw;
         top: 185vh;
     }
 
     .side_table6{
         position: absolute;
-        left: 45vw;
+        left: 50vw;
         top: 185vh;
     }
 
@@ -98,4 +120,4 @@
         opacity: 0.8;
     }
 
-
+ */

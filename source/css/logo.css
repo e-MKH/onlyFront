@@ -6,14 +6,8 @@ body {
 }
 
 .logo {
-<<<<<<< HEAD
     width: 400px;
     margin-top: 20px;
-=======
-    width: 30%;
-    
-
->>>>>>> yongdeok
 }
 
 header>div {
@@ -39,4 +33,5 @@ header nav a {
     position: fixed;
     top: 20vh;
     left: 15px;
+    
 }
