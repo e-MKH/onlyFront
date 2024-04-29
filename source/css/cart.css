@@ -9,11 +9,18 @@
     margin-right: 10px;
 }
 
-#checkout-button {
-    display: block;
-    width: 100%;
+.cartBtn_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.checkout-button {
+    display: flex;
+    justify-content: center;
+    width: 20%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     background-color: silver;
     color: #fff;
     text-align: center;
@@ -33,12 +40,13 @@
 .cart_list th {
     text-align: center;
     padding: 10px;
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 .cart_list td {
     padding: 10px;
     text-align: center;
+    background-color: white;
 }
 
 /* 제품 사진 스타일 */
