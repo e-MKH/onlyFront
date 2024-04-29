@@ -6,8 +6,14 @@ body {
 }
 
 .logo {
+<<<<<<< HEAD
     width: 400px;
     margin-top: 20px;
+=======
+    width: 30%;
+    
+
+>>>>>>> yongdeok
 }
 
 header>div {
