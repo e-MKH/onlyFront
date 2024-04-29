@@ -23,30 +23,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
     <link rel="stylesheet" href="../../source/css/login.css">
+    <link rel="stylesheet" href="../../source/css/logo.css">
 </head>
 
 <body>
+
+    <header>
+        <div>
+            <a href="./index.html"> <img src="/source/images/LOGO.svg" class="logo"></a>
+        </div>
+        <nav class="do">
+            <a href="./menu/menu.html"><i class="fa-solid fa-bars "></i></a>
+
+        </nav>
+
+    </header>
     <div id="wrap" class="wrap">
         <!-- <img src="../image/main_backgound.jpg"> -->
 
         <div id="login_wrap">
             <div>
-                <form class="login_form" novalidate>
+                <form class="login_form">
                     <div id="login_title">Login</div>
                     <div>
-                        <input type="text" placeholder="Email" name="userId" id="userId" />
+                        <input type="email" placeholder="Email" name="userId" id="userId" required />
                     </div>
                     <div>
 
-                        <input type="password" placeholder="Password" id="userPw" name="userPw" />
+                        <input type="password" placeholder="Password" id="userPw" name="userPw" required />
+                    </div>
+                    <div class="findIdPw">
+                        <input type="checkbox" value="checked" id="findIdPw">
+                        <label for="findIdPw">아이디&비밀번호 찾기</label>
                     </div>
                     <div class="btn_wrap">
-                        <a href="../../pages/index.html">Login</a>
+                        <a href="../menu/menu.html"><button>Login</button></a>
+                        <a href="../../pages/auth/sign_up.html" id="newAccount">New Account</a>
                         <!-- <a href="../../pages/index.html"><button class="btn_login">Login</button></a>
                         <a href="../../pages/auth/sign_up.html"> <button class="btn_login">New Account</button></a> -->
-                    </div>
-                    <div class="btn_wrap">
-                        <a href="../../pages/auth/sign_up.html">New Account</a>
+
                     </div>
                 </form>
             </div>

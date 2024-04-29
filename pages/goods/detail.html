@@ -22,21 +22,63 @@
     <title>Goods Detail</title>
     <link rel="stylesheet" href="../../source/css/goods.css">
     <link rel="stylesheet" href="../../source/css/logo.css">
-	<script src="https://kit.fontawesome.com/30b28e001e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/30b28e001e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="image-container">
-            <img src="../../source/images/light_stick_Danielle.png" alt="라이트 스틱">
+    <header>
+        <div>
+            <a href="../menu/menu.html"> <img src="/source/images/LOGO.svg" class="logo"></a>
         </div>
-        <div class="details-container">
-            <p class="product-name">상품명 : 라이트 스틱 _ 다니엘</p>
-            <p class="product-price">금액</p>
-            <p class="product-quantity">수량</p>
-            <a href="../cart/index.html" class="cart-button">장바구니</a>
+        <nav class="do">
+            <a href="./menu/menu.html"><i class="fa-solid fa-bars "></i></a>
+        </nav>
+    </header>
+    <!-- <div id="detail_title">
+        <h1>Detail</h1>
+    </div> -->
+    <div class="container">
+        <div class="detail_wrap">
+
+            <div class="image-container">
+                <img src="../../source/images/yeonjung_image/light_stick_Danielle.png" alt="라이트 스틱" class="goods_img">
+            </div>
+            <div class="details-container">
+                <table>
+                    <tr>
+                        <th>상품명</th>
+                        <td class="product-name">라이트 스틱 _ 다니엘</td>
+                    </tr>
+                    <tr>
+                        <th>수량</th>
+                        <td class="product-quantity">
+                            <select name="quantity" id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>금액</th>
+                        <td class="product-price">금액: 22,000원</td>
+                    </tr>
+                </table>
+                <div class="button-container">
+                    <a href="./index.html" class="continue-shopping-button">쇼핑 계속하기</a>
+                    <a href="../cart/index.html" class="cart-button">장바구니</a>
+                </div>
+            </div>
+        </div>
+        <div class="explain_product">
+            <h2>상품 상세설명</h2>
+            <p>이 상품은 다니엘의 라이트 스틱입니다. 멋진 디자인과 밝은 빛으로 당신의 공연을 화려하게 만들어줄 것입니다.</p>
+            <img src="../../source/images/yeonjung_image/danielle_detail.png">
         </div>
     </div>
+
+
+
 </body>
 
 </html>

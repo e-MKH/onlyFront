@@ -20,49 +20,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
+    <link rel="stylesheet" href="../../source/css/sign_up.css">
+    <link rel="stylesheet" href="../../source/css/logo.css">
 </head>
 
 <body>
-    회원가입 화면입니다.
+    <header>
+        <div>
+            <a href="../menu/menu.html"> <img src="/source/images/LOGO.svg" class="logo"></a>
+        </div>
+        <nav class="do">
+            <a href="./menu/menu.html"><i class="fa-solid fa-bars "></i></a>
+        </nav>
+    </header>
     <div class="container">
-        <div class="input-form-backgroud row">
-            <div class="input-form col-md-12 mx-auto">
-                <h4 class="mb-3">회원가입</h4>
-                <form class="validation-form" novalidate action="../../pages/index.html">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="name">이름</label>
-                            <input type="text" class="form-control" id="name" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                이름을 입력해주세요.
-                            </div>
-                        </div>
+        <div class="sign_wrap">
+            <div class="sign_title">Join Us</div>
+            <form class="sign_form" novalidate action="../menu/menu.html">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="이름을 입력하세요" value="" required>
+                </div>
+                <div>
+                    <label for="name">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="영문/숫자 포함 최대 12자리"
+                        maxlength="12" required>
+                </div>
 
+                <div>
+                    <label><strong>PHONE</strong></label>
+                    <div class="phoneNum">
+                        <input type="text" value="010" readonly size="1"><span>&#45;</span>
+                        <input type="text" size="1" minlength="3" maxlength="4" required><span> &#45; </span>
+                        <input type="text" size="1" minlength="4" maxlength="4" required>
                     </div>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="zxduswjd@naver.com" required>
+                </div>
+                <div class="address_wrap">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="서울특별시 강남구" required>
+                    <button type="button" id="findAddressBtn">주소 찾기</button>
 
-                    <div class="mb-3">
-                        <label for="email">이메일</label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-                        <div class="invalid-feedback">
-                            이메일을 입력해주세요.
-                        </div>
-                    </div>
+                </div>
+                <!-- <div>
+                    <label for="address2">상세주소</label>
+                    <input type="text" class="form-control" id="address2" placeholder="상세주소를 입력해주세요.">
+                </div> -->
+                <div class="agreement">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">회원가입 약관에 동의합니다.</label>
+                    <div class="agreement_content">
+                        <h2>회원가입 약관</h2>
+                        <p>
+                            회원가입 약관에 동의하셔야 회원가입이 가능합니다. 아래는 회원가입에 동의하는 내용입니다.
+                            제1조: 회원은 회사에서 제공하는 서비스를 이용함에 있어서 이 약관에 따라서 행동하여야 합니다.
+                            제2조: 회원은 본 서비스의 이용을 위하여 개인정보를 제공하여야 하며, 개인정보의 보호 및 이용에 대한
+                            동의를 해야 합니다.
+                            제3조: 회원은 본 서비스를 이용함에 있어 다음의 행위를 해서는 안됩니다.
 
-                    <div class="mb-3">
-                        <label for="address">주소</label>
-                        <input type="text" class="form-control" id="address" placeholder="서울특별시 강남구" required>
-                        <div class="invalid-feedback">
-                            주소를 입력해주세요.
-                        </div>
+                        <ul>
+                            <li>타인의 개인정보를 도용하여 가입하는 행위</li>
+                            <li>부적절한 내용의 게시물을 게시하는 행위</li>
+                            <li>저작권 침해를 일으키는 행위</li>
+                        </ul>
+                        </p>
                     </div>
+                </div>
 
-                    <div class="mb-3">
-                        <label for="address2">상세주소<span class="text-muted">&nbsp;(필수 아님)</span></label>
-                        <input type="text" class="form-control" id="address2" placeholder="상세주소를 입력해주세요.">
-                    </div>
-                    <button> 회원가입 </button>
-                </form>
-            </div>
+                <div class="btn_wrap">
+                    <a href="../menu/menu.html"><button>회원가입</button></a>
+                </div>
+            </form>
         </div>
     </div>
 

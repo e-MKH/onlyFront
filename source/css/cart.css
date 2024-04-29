@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-/* body {
-
-    background: url("../images/main_backgound.jpg") no-repeat fixed center/cover;
-
-} */
-=======
->>>>>>> main
-
 .container {
     background-color: rgba(255, 255, 255, 0.9);
     max-width: 800px;
@@ -14,45 +5,22 @@
     padding: 20px;
 }
 
-.product {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #fff;
-
-}
-
-.product-image {
-    display: inline-block;
-    margin-right: 20px;
-    flex: 0 0 50%;
-
-}
-
-.product-image img {
-    vertical-align: middle;
-    max-width: 50%;
-    height: auto;
-}
-
-.product-info {
-    display: inline-block;
-    flex: 1;
-}
-
-.product-info p {
-    margin: 5px 0;
-}
-
 .checkbox {
     margin-right: 10px;
 }
 
-#checkout-button {
-    display: block;
-    width: 100%;
+.cartBtn_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.checkout-button {
+    display: flex;
+    justify-content: center;
+    width: 20%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     background-color: silver;
     color: #fff;
     text-align: center;
@@ -61,4 +29,32 @@
     border-radius: 5px;
     box-sizing: border-box;
     /* 내부 padding 포함하여 너비 계산 */
+}
+
+.cart_list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 테이블 헤더 스타일 */
+.cart_list th {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.cart_list td {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+/* 제품 사진 스타일 */
+.cart_list img {
+    max-width: 100px;
+    height: auto;
+}
+
+.cart_list select {
+    width: 50px;
 }

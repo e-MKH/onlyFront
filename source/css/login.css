@@ -1,4 +1,94 @@
-* {
+#login_wrap {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 50vh;
+    margin: calc(50vh - 15%) auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#login_title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: gray;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn_wrap,
+.input_wrap,
+.login_form {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.btn_wrap button {
+    position: relative;
+    border: none;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    padding: 7px 10px;
+}
+
+.btn_wrap a:nth-of-type(1) {
+    padding: 0px
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn_wrap a {
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 10px;
+    background-color: lightblue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    /* 배경색 변경 시 부드럽게 전환 */
+}
+
+/* 버튼 링크에 호버 효과 */
+#newAccount:hover {
+    background-color: rgb(84, 178, 209)
+        /* 호버 시 배경색 변경 */
+}
+
+.login_form input {
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+/* =============================================== */
+/* 아이디 비밀번호 찾기 창 */
+.findIdPw {
+    display: inline-block;
+    margin-top: -20%;
+}
+
+#findIdPw {
+    width: 10px;
+}
+
+.findIdPw>label {
+    font-size: 70%;
+    position: relative;
+    bottom: 5px;
+    color: gray
+}
+
+/* * {
     margin: 0px;
     text-align: center;
 }
@@ -9,15 +99,6 @@ body {
 
 #wrap {
     height: 100vh;
-    /* 
-    background-image: url("../image/main_backgound.jpg");
-
-    body {
-        background: url(./backG.jpg) no-repeat fixed center/cover;
-    } */
-
-
-
 }
 
 #login_wrap {
@@ -89,4 +170,4 @@ body {
 .btn_wrap a {
     text-decoration: none;
     border: 1px solid 1px;
-}
+} */
