@@ -152,13 +152,17 @@
     text-align: left;
 }
 
-.agreement>input[value=checked] .agreement_content:hover {
+/* .agreement>input[value=checked] .agreement_content:hover {
     display: none;
-}
+} */
 
 .address_wrap {
     position: relative;
     display: inline-block;
+}
+
+input[id="agree"]:checked+.agreement_content {
+    display: none;
 }
 
 /* 주소 찾기 버튼 스타일 */

@@ -43,7 +43,7 @@
     margin: 0 auto;
     text-align: center;
     background-color: #fff;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .goods_wrap {
@@ -84,7 +84,7 @@
 
 }
 
-.tab {}
+
 
 
 div>p {
@@ -118,7 +118,7 @@ div>p {
     box-sizing: border-box;
     padding: 20px;
     margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
 }
 
@@ -234,4 +234,9 @@ td {
 
 .explain_product h2 {
     margin-bottom: 10px;
+}
+
+.explain_product>img {
+    margin-top: 20px;
+    width: 100%;
 }
