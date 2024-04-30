@@ -1,21 +1,102 @@
     main{
-        height: 80vh;
+        height: 75vh;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         margin-top: 10vh;
+        border-radius:10%;
         align-items: center;
+        background-color: rgba(255, 250, 250, 0.5);
     }
 
+    section{
+        transition: 1s;
+        transform: rotate(5deg);
+        animation: slide 3s ease-in-out;
+        position: relative;
+        height: 9vh;
+        bottom: 15vh;
+    }
     
     video{
-        width: 15vw;
-        transition: 0.7s;
+        box-shadow: 1vh 1vh 1vw black;
+        width: 14vw;
+        border-radius: 1%;
+    }
+    P{
+        box-shadow: 0.3vw 0.3vw 1vw black;
+        border-radius: 10%;
+        position: fixed;
+        background-color: rgba(233, 224, 224, 0.341);
+        bottom: 7.5vh;
+        height: 4vh;
+        width: 14vw;
+        line-height: 4vh;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 18px;
+        font-weight: bold;
+        overflow:hidden;
+
     }
 
-    video:hover{
-        transform: scale(1.4);
+    section:nth-child(1) p{
+        background-color: aliceblue;
+        color: black;
     }
+    
+    section:nth-child(2) p{
+        background-color: pink;
+        color: red;
+    }
+    section:nth-child(3) p{
+        background-color: black;
+        color: rgb(152, 229, 253);
+    }
+    section:nth-child(4) p{
+        background-color: green;
+        color: aliceblue;
+    }
+    section:nth-child(5) p{
+        background-color: aliceblue;
+    }
+    @keyframes slide{
+        from{
+            opacity: 0;
+            transform: rotate(-3deg);
+        }
+        to{
+            opacity: 1;
+            transform: rotate(3deg);
+        }
+    }
+
+    section:hover{
+        transform:scale(1.2)
+    }
+    /* video:nth-of-type(1),
+    video:nth-of-type(2),
+    video:nth-of-type(3),
+    video:nth-of-type(4),
+    video:nth-of-type(5)
+    {
+    position: relative;}
+
+    video:nth-of-type(1):hover{
+        transform: translate(18.9vw);
+    }
+    video:nth-of-type(2):hover{
+        transform: translate(18.9vw);
+    }
+    video:nth-of-type(3):hover{
+        transform: translate(18.9vw);
+    }
+    video:nth-of-type(4):hover{
+        transform: translate(18.9vw);
+    }
+    video:nth-of-type(5):hover{
+        transform: translate(-18.9vw);
+    } */
 
 
 
