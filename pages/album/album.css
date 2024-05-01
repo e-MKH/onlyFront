@@ -9,6 +9,8 @@ main div {
 
 main hr {
 	width: 70%;
+	display: inline-block;
+	text-align: center;
 }
 
 main img {

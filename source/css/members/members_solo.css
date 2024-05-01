@@ -1,19 +1,19 @@
 
 tr img{
-    width: 18vw;
-    height: 45vh;
+    width: 15vw;
+    height: 35vh;
 }
 
 video{
     width:50vw;
-    height: 96vh;
+    height: 75vh;
     
 }
 
 main{
-    margin-top: 5%;
+    margin-top: 5vh;
     width: 90vw;
-    height:100vh;
+    height:80vh;
     position: relative;
     background-color: rgb(255, 255, 255, 0.1);
     top:calc((100% - 70vh)/2);

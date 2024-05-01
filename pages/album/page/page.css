@@ -19,7 +19,6 @@ main h1 {
 }
 
 main span {
-    margin: 1%;
     padding: 4%;
 
     display: inline-block;
@@ -42,7 +41,10 @@ main span {
 
 main hr {
     width: 75%;
+    display: inline-block;
+    text-align: center;
 }
+
 
 main div div img {
     width: 50px;
@@ -51,3 +53,4 @@ main div div img {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+

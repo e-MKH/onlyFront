@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: url(../images/main_backgound.jpg);
     background-size: cover;
@@ -6,14 +11,8 @@ body {
 }
 
 .logo {
-<<<<<<< HEAD
     width: 400px;
-    margin-top: 20px;
-=======
-    width: 30%;
-    
-
->>>>>>> yongdeok
+    margin: 20px 0;
 }
 
 header>div {
@@ -39,4 +38,51 @@ header nav a {
     position: fixed;
     top: 20vh;
     left: 15px;
+}
+
+/* footer======================================= */
+
+footer {
+    padding: 5px;
+
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: fixed;
+    bottom: 0;
+
+}
+
+.container {
+    display: grid;
+    height: 70px;
+
+    grid-template: 1fr / 130px 8fr 1fr;
+}
+
+.container div {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    /* font-weight: bold; */
+    color: gray;
+}
+
+.f_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.href svg {
+    width: 25px;
+    margin: 0 3px;
+    fill: gray;
+    transition-duration: 1s;
+}
+
+.href svg:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
 }
