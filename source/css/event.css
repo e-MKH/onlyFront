@@ -6,7 +6,7 @@
         margin-top: 10vh;
         border-radius:10%;
         align-items: center;
-        background-color: rgba(255, 250, 250, 0.5);
+        background-color: rgba(9, 9, 9, 0.478);
     }
 
     section{
@@ -18,14 +18,31 @@
         bottom: 15vh;
     }
     
+    @keyframes slide{
+        from{
+            opacity: 0;
+            transform: rotate(-3deg);
+        }
+        to{
+            opacity: 1;
+            transform: rotate(3deg);
+        }
+    }
+
+    section:hover{
+        transform:scale(1.2)
+    }
+
     video{
         box-shadow: 1vh 1vh 1vw black;
         width: 14vw;
-        border-radius: 1%;
+        border-radius: 20% 4% 20% 4% / 4% 20% 4% 20%;
     }
+
     P{
         box-shadow: 0.3vw 0.3vw 1vw black;
-        border-radius: 10%;
+        border-radius: 20% 4% 20% 4% / 4% 20% 4% 20%;
+        
         position: fixed;
         background-color: rgba(233, 224, 224, 0.341);
         bottom: 7.5vh;
@@ -59,20 +76,6 @@
     }
     section:nth-child(5) p{
         background-color: aliceblue;
-    }
-    @keyframes slide{
-        from{
-            opacity: 0;
-            transform: rotate(-3deg);
-        }
-        to{
-            opacity: 1;
-            transform: rotate(3deg);
-        }
-    }
-
-    section:hover{
-        transform:scale(1.2)
     }
     /* video:nth-of-type(1),
     video:nth-of-type(2),
