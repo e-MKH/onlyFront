@@ -1,39 +1,54 @@
-/* * {
-    margin: 0px;
-    padding: 0ox;
-}
+ .goods_container {
+     max-width: 1024px;
+     margin: 20px auto;
+     background-color: rgba(255, 255, 255, 0.71);
+     /* position: relative; */
+     display: flex;
+     justify-content: center;
+     border-radius: 5px;
 
-.goods_container {
-    text-align: center;
-    background-color: #fff;
-    opacity: 0.7;
-}
 
-.goods_wrap {
-    position: relative;
-    line-height: normal;
-    width: 100vw;
-    text-align: center;
-    background-color: #fff;
-    opacity: 1;
+ }
 
-}
+ .goods_wrap {
+     margin-top: 30px;
+     margin-bottom: 30px;
+     line-height: normal;
+     width: 90%;
+     text-align: center;
+     background-color: #fff;
+     opacity: 1;
+     padding: 20px 0px;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     border-radius: 5px;
+ }
 
-.goods_wrap>img {
-    display: inline;
-}
+ .goods_1,
+ .goods_2 {
+     display: flex;
+     justify-content: space-evenly;
+ }
 
-.goods_img:hover {
+ /* 
+ .goods_1 a {
+     flex-basis: 100%;
+ } */
+ .goods_img {
+     width: 90%;
+     transition-duration: 0.8s;
 
-    width: 17%;
-}
+ }
 
-.goods_img {
-    width: 15%;
-    transition-property: scale(1.1);
-    transition-duration: 0.8s;
-} */
-* {
+ .goods_img:hover {
+     /* width: 17%; */
+     transform: scale(1.1);
+ }
+
+
+
+ /* * {
     margin: 0;
     padding: 0;
 }
@@ -63,40 +78,40 @@
     justify-content: space-evenly;
 }
 
+.goods {
+    display: none;
+}
+
+#tab1:checked~.goods_1,
+#tab2:checked~.goods_2,
+#tab3:checked~.goods_3 {
+    display: flex;
+}
+
 .goods_1 img {
     width: 100%;
     transition-property: transform;
-    /* scale 대신 transform 사용 */
     transition-duration: 0.8s;
     filter: opacity(1);
-}
-
-.tab_wrap {
-    display: flex;
-    justify-content: center;
-}
-
-
+} */
+ /* 
 .tab_wrap {
     display: flex;
     justify-content: start;
-    gap: 30px;
-
+    padding-left: 10px;
+    gap: 20px;
 }
 
-
-
-
 div>p {
-    /* display: inline-block; */
+
     background-color: aliceblue;
     opacity: .8;
     white-space: pre-wrap;
 
-}
+} */
 
-/* =====================tab 영역 ================== */
-.tab_wrap {
+ /* =====================tab 영역 ================== */
+ /* .tab_wrap {
     margin-top: 20px;
     position: relative;
 
@@ -110,133 +125,134 @@ div>p {
 .tab {
     width: 5%;
     border: 1px solid/ white;
-}
+} */
 
-/* ============ detail page =====================  */
-.container {
-    max-width: 850px;
-    box-sizing: border-box;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-}
+ /* ============ detail page =====================  */
+ .container {
+     max-width: 850px;
+     box-sizing: border-box;
+     padding: 20px;
+     margin: 20px auto;
+     background-color: rgba(255, 255, 255, 0.5);
+     border-radius: 5px;
+ }
 
 
-/*  {
+ /*  {
 
 } */
 
-.detail_wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    box-sizing: border-box;
-    padding: 10px;
-    margin: 20px auto;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
-}
+ .detail_wrap {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 800px;
+     box-sizing: border-box;
+     padding: 10px;
+     margin: 20px auto;
+     background-color: rgba(255, 255, 255, 0.8);
+     border-radius: 5px;
+ }
 
-#detail_title {
-    margin: 10% 0 0 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+ #detail_title {
+     margin: 10% 0 0 0;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
 
-.image-container {
-    flex: 1;
-    margin-right: 20px;
+ .image-container {
+     flex: 1;
+     margin-right: 20px;
 
-}
+ }
 
-.details-container {
-    flex: 2;
-}
+ .details-container {
+     flex: 2;
+ }
 
-.image-container .goods_img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    opacity: 1;
-    border: 1px solid silver;
+ .image-container .goods_img {
+     width: 100%;
+     height: auto;
+     max-width: 100%;
+     opacity: 1;
+     border: 1px solid silver;
 
-}
+ }
 
-table {
-    margin-top: 30px;
-    background-color: rgba(255, 255, 255, 1);
-    width: 100%;
+ table {
+     margin-top: 30px;
+     background-color: rgba(255, 255, 255, 1);
+     width: 100%;
 
-}
+ }
 
-th {
-    background-color: rgba(255, 255, 255, 1);
-    padding: 20px;
-    border-right: 1px solid silver;
-}
+ th {
+     background-color: rgba(255, 255, 255, 1);
+     padding: 20px;
+     border-right: 1px solid silver;
+ }
 
-th,
-td {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
+ th,
+ td {
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+ }
 
-.product-name,
-.product-price,
-.product-quantity {
-    margin: 5px 0;
-}
+ .product-name,
+ .product-price,
+ .product-quantity {
+     margin: 5px 0;
+ }
 
-.cart-button,
-.continue-shopping-button {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-right: 10px;
-}
+ .cart-button,
+ .continue-shopping-button {
+     display: inline-block;
+     padding: 10px 20px;
+     color: #fff;
+     text-decoration: none;
+     border: none;
+     border-radius: 5px;
+     margin-top: 20px;
+     margin-right: 10px;
+ }
 
-.button-container {
-    position: relative;
-    left: calc(50% - 10px);
-}
+ .button-container {
+     position: relative;
+     display: flex;
+     justify-content: center;
+ }
 
-.continue-shopping-button {
-    background-color: lightgray;
-}
+ .continue-shopping-button {
+     background-color: lightgray;
+ }
 
-.cart-button {
-    background-color: lightblue;
-}
+ .cart-button {
+     background-color: lightblue;
+ }
 
-.continue-shopping-button:hover {
-    background-color: rgb(193, 199, 202);
-}
+ .continue-shopping-button:hover {
+     background-color: rgb(193, 199, 202);
+ }
 
-.cart-button:hover {
-    background-color: rgb(84, 178, 209)
-}
+ .cart-button:hover {
+     background-color: rgb(84, 178, 209)
+ }
 
 
-/* 상세설명 CSS */
-.explain_product {
-    max-width: 800px;
-    margin: 0 auto 5px;
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid silver;
-    border-radius: 5px;
-}
+ /* 상세설명 CSS */
+ .explain_product {
+     max-width: 800px;
+     margin: 0 auto 5px;
+     box-sizing: border-box;
+     padding: 20px;
+     background-color: rgba(255, 255, 255, 0.8);
+     border: 1px solid silver;
+     border-radius: 5px;
+ }
 
-.explain_product h2 {
-    margin-bottom: 10px;
-}
+ .explain_product h2 {
+     margin-bottom: 10px;
+ }
 
-.explain_product>img {
-    margin-top: 20px;
-    width: 100%;
-}
+ .explain_product>img {
+     margin-top: 20px;
+     width: 100%;
+ }

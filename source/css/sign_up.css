@@ -1,6 +1,6 @@
 .sign_wrap {
     background-color: rgba(255, 255, 255, 0.7);
-    width: 70vh;
+    width: 90vh;
     margin: 5vh auto;
     text-align: center;
     padding: 25px;
@@ -23,10 +23,6 @@
 
 }
 
-/* .sign_form #name{
-    width: 30%;
-    
-} */
 
 .sign_form>div input {
     width: 60%;
@@ -76,7 +72,7 @@
 }
 
 .btn_wrap button {
-    position: relative;
+    /* position: relative; */
     border: none;
     background-color: lightblue;
     color: white;
@@ -168,20 +164,19 @@ input[id="agree"]:checked+.agreement_content {
 /* 주소 찾기 버튼 스타일 */
 #findAddressBtn {
     margin-left: 10px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     background-color: lightblue;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: #fff;
 }
 
-.address_wrap input[type="text"] {
-    width: calc(100% - 200px);
-}
+
 
 .address_wrap button {
     position: absolute;
     right: 100px;
     top: 35%;
-    width: 100px;
+    width: 80px;
 }

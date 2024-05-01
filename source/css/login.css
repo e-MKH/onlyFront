@@ -17,7 +17,7 @@
 
 .btn_wrap,
 .input_wrap,
-.login_form {
+.login_form { 
     text-align: center;
     margin-top: 5px;
 }
@@ -55,6 +55,7 @@ input[type="password"] {
     transition: background-color 0.3s;
     /* 배경색 변경 시 부드럽게 전환 */
 }
+
 
 /* 버튼 링크에 호버 효과 */
 #newAccount:hover {

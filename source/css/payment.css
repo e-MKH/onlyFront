@@ -1,7 +1,8 @@
+
 .container {
     background-color: rgba(255, 255, 255, 0.7);
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
 }
 
@@ -22,7 +23,6 @@
 
 .product-list td img {
     filter: opacity(1);
-    /* 이미지의 투명도를 100%로 설정 */
     max-width: 100px;
     height: auto;
 }
@@ -51,15 +51,13 @@
 
 
 .product-list {
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* 하얀색 배경에 70% 투명도 */
     border-collapse: collapse;
+    border-radius: 5px;
     width: 100%;
 }
 
 .product {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    /* 상품 간의 구분선 */
 }
 
 .product td {
@@ -114,4 +112,101 @@ thead tr {
 
 #checkout-button:hover {
     background-color: rgb(84, 178, 209);
+}
+
+/* ======배송지 정보 받기 */
+.delivery-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.delivery-info h2 {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.form-group label {
+    flex: 1;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+    flex: 2;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* 입력 요소의 너비를 조정하고 오른쪽에 마진 추가 */
+    padding: 8px;
+    margin-top: 5px;
+    /* 위 아래 여백 추가 */
+}
+
+.form-group input[type="text"]:last-child {
+    margin-right: 0;
+}
+
+.form-group span {
+    margin: 0 5px;
+}
+
+.delivery-phone {
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+}
+
+.delivery-address {
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    /* 버튼 위쪽 여백 추가 */
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(84, 178, 209);
+}
+
+#findAddressBtn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.address_wrap input[type="text"] {
+    width: calc(100% - 200px);
+}
+
+.address_wrap button {
+    position: relative;
+    right: 0;
+    top: 35%;
+    width: 100px;
 }
