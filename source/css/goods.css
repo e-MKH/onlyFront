@@ -1,5 +1,5 @@
  .goods_container {
-     max-width: 1024px;
+     max-width: 70vw;
      margin: 20px auto;
      background-color: rgba(255, 255, 255, 0.71);
      /* position: relative; */
@@ -26,7 +26,8 @@
  }
 
  .goods_1,
- .goods_2 {
+ .goods_2,
+ .goods_3 {
      display: flex;
      justify-content: space-evenly;
  }
@@ -128,8 +129,8 @@ div>p {
 } */
 
  /* ============ detail page =====================  */
- .container {
-     max-width: 850px;
+ .detail_container {
+     max-width: 1024px;
      box-sizing: border-box;
      padding: 20px;
      margin: 20px auto;
@@ -146,7 +147,7 @@ div>p {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     max-width: 800px;
+     max-width: 90%;
      box-sizing: border-box;
      padding: 10px;
      margin: 20px auto;
@@ -178,21 +179,21 @@ div>p {
 
  }
 
- table {
+ .details-container table {
      margin-top: 30px;
      background-color: rgba(255, 255, 255, 1);
      width: 100%;
 
  }
 
- th {
+ .details-container table th {
      background-color: rgba(255, 255, 255, 1);
      padding: 20px;
      border-right: 1px solid silver;
  }
 
- th,
- td {
+ .details-container table th,
+ .details-container table td {
      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
  }
 
@@ -239,7 +240,7 @@ div>p {
 
  /* 상세설명 CSS */
  .explain_product {
-     max-width: 800px;
+     max-width: 90%;
      margin: 0 auto 5px;
      box-sizing: border-box;
      padding: 20px;

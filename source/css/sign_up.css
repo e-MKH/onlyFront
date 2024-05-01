@@ -107,6 +107,10 @@
     text-align: left;
 }
 
+/* .address_wrap label+input{
+    width: 55%;
+    margin-right: 30px;
+} */
 .sign_form .agreement input[type="checkbox"] {
     width: 20px;
     height: 20px;
@@ -148,10 +152,6 @@
     text-align: left;
 }
 
-/* .agreement>input[value=checked] .agreement_content:hover {
-    display: none;
-} */
-
 .address_wrap {
     position: relative;
     display: inline-block;
@@ -170,13 +170,15 @@ input[id="agree"]:checked+.agreement_content {
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
 
 .address_wrap button {
     position: absolute;
-    right: 100px;
+    right: 22%;
     top: 35%;
     width: 80px;
 }

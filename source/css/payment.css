@@ -1,8 +1,7 @@
-
-.container {
+.payment_container {
     background-color: rgba(255, 255, 255, 0.7);
-    max-width: 800px;
-    margin: 20px auto;
+    /* max-width: 900px; */
+    /* margin: 20px auto; */
     padding: 20px;
 }
 
@@ -31,19 +30,20 @@
     text-align: right;
 }
 
-#payment-methods {
+#payment_methods {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
 
-#payment-methods label {
+#payment_methods label {
     display: flex;
     align-items: center;
     margin-right: 10px;
+    /* font-weight: bold; */
 }
 
-#payment-methods label img {
+#payment_methods label img {
     width: 20px;
     height: auto;
     margin-right: 5px;
@@ -86,7 +86,7 @@
     margin-bottom: 20px;
 }
 
-thead tr {
+.product-list thead tr {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -184,10 +184,12 @@ button[type="submit"] {
     color: #fff;
     cursor: pointer;
     margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
     /* 버튼 위쪽 여백 추가 */
 }
 
-button[type="submit"]:hover {
+.payment_container button[type="submit"]:hover {
     background-color: rgb(84, 178, 209);
 }
 
@@ -198,6 +200,13 @@ button[type="submit"]:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#findAddressBtn:hover {
+    background-color: rgb(84, 178, 209);
 }
 
 .address_wrap input[type="text"] {
@@ -209,4 +218,54 @@ button[type="submit"]:hover {
     right: 0;
     top: 35%;
     width: 100px;
+
+}
+
+.recently_container {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: auto;
+    /* position: relative; */
+}
+
+.payment_grid {
+    display: grid;
+    max-width: 900px;
+    grid-template: 1fr 3fr 1fr / 8fr 2fr;
+    place-content: center;
+    margin: auto;
+    gap: 40px;
+
+}
+
+.recently_container {
+    display: flex;
+    height: 55%;
+    place-content: center;
+    border-radius: 5px;
+
+
+}
+
+.recently_product {
+    display: grid;
+    width: 90%;
+    background-color: #fff;
+    place-content: center;
+    margin: 10px 0 10px;
+    border-radius: 5px;
+
+}
+
+.recently_product h3 {
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: 2px solid lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+.recently_container img {
+    padding: 10%;
+    max-width: 80%;
+
 }
