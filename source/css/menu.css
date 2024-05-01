@@ -71,6 +71,8 @@ main {
 } */
 
 li {
+    
+
     margin-top: 60px;
     /* 메뉴 하나하나 사이에 거리*/
     font-size: 30px;
@@ -169,6 +171,10 @@ li {
 a {
     text-decoration-line: none;
     /*메뉴 글자 밑에 선 숨김*/
+    display: block;
+    width: 15%;
+
+    
 }
 
 .icon a {
