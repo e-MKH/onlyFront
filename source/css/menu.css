@@ -5,92 +5,233 @@
 }
 
 body {
-    /* background: url(../images/vi.mp4); */
-    background-size: 65%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
     background-color: rgb(0, 0, 0);
 }
-.container{
-        margin: calc((0vh - 1150px)/2) calc((120% - -450px)/2);
-    /* position: relative; */
-}
 
-.vid{
-    width: 1000px;
-    height: 500px;
+.container {
+    /* 영상 위치 설정 */
+    position: fixed;
+    left: 35vw;
+    top: 5vh;
 
 }
 
 
+/*로고 설정  */
+img {
+    position: fixed;
+    left: 4vw;
+    top: 4vw;
+    width: 400px;
+    /*로고 크기 설정    */
+    animation: logow 1s;
+}
 
-/* .logo {
-    height: 300px;
-    margin-top: -150px;
-} */
+@keyframes logow {
+    from {
+        left: -30vw;
+        opacity: 0.1;
 
+    }
+
+    to {
+        opacity: 1;
+        left: 4vw;
+    }
+}
+
+
+
+.main_video {
+    width: 60vw;
+    /*동영상 크기 */
+    height: 40em;
+    /*동영상 상 하 위치 */
+
+}
 
 main {
-    width: 30%;
-    height: 100%;
     list-style: none;
+    /* 메뉴 옆에 점 숨김*/
     text-align: center;
-    margin-top: 7%;
-
+    /*메뉴 중심 위치*/
+    position: fixed;
+    /* 오른쪽 으로 위치 고정*/
+    top: 15vh;
+    /*  메뉴 전체  아래로 설정 값*/
+    left: 3vw;
+    /*  메뉴 중심 맞추는 설정 값*/
 }
 
+/* div:nth-child(3) li{
+    color: aqua;
+} */
 
 li {
-    margin-top: 70px;
+    margin-top: 60px;
+    /* 메뉴 하나하나 사이에 거리*/
     font-size: 30px;
+    /* 메뉴 글자 사이즈*/
     color: gainsboro;
+    /* 메뉴 글자 색*/
     transition-property: font-size;
+    /*메뉴 호버할떄 폰트사이즈*/
     transition-duration: .5s;
+    /* 호버할떄 올라오는 초*/
     font-weight: bold;
+    /*메뉴 글자 디자인*/
+    position: relative;
+    left: 4vw;
+}
+
+.member {
+    position: relative;
+    left: 3vw;
+    animation: slide 2s;
+    /*옆에서 슬라이스로 넘어오는 효과*/
+}
+
+@keyframes slide {
+    from {
+        left: -30vw;
+        opacity: 0.1;
+
+    }
+
+    to {
+        opacity: 1;
+        left: 3vw;
+    }
+}
+
+.ALBUMS {
+    position: relative;
+    left: 3vw;
+    animation: slide 2.2s;
+    /*옆에서 슬라이스로 넘어오는 효과*/
+}
+
+@keyframes slide {
+    from {
+        left: -30vw;
+        opacity: 0.1;
+
+    }
+
+    to {
+        opacity: 1;
+        left: 3vw;
+    }
+}
+
+.GOODS {
+    position: relative;
+    left: 3vw;
+    animation: slide 2.4s;
+    /*옆에서 슬라이스로 넘어오는 효과*/
+}
+
+@keyframes slide {
+    from {
+        left: -30vw;
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+        left: 3vw;
+    }
+}
+
+.EVENT {
+    position: relative;
+    left: 3vw;
+    animation: slide 2.6s;
+    /*옆에서 슬라이스로 넘어오는 효과*/
+}
+
+@keyframes slide {
+    from {
+        left: -30vw;
+        opacity: 0.1;
+
+    }
+
+    to {
+        opacity: 1;
+        left: 3vw;
+    }
 }
 
 a {
     text-decoration-line: none;
+    /*메뉴 글자 밑에 선 숨김*/
 }
 
 .icon a {
+    /*  링크 걸어준 아이콘 설정 값들*/
+    position: relative;
+    left: 7vw;
     display: inline-block;
     font-size: 25px;
     transition-property: font-size;
     transition-duration: 1s;
     color: gray;
-    margin: 3px;
-    margin-top: 9px;
+    margin: .5vw;
+    margin-top: 1vw;
     opacity: .7;
+    animation: iconn 2.8s;
 }
-/* 아이콘 사이즈 및 컬러 설정 */
+
+@keyframes iconn {
+    from {
+        left: -30vw;
+        opacity: 0.1;
+
+    }
+
+    to {
+        left: 7vw;
+    }
+}
 
 
+
+
+
+/*로그인 버튼만 따로 싸이즈 크게  */
 .icon a:nth-of-type(3) {
     font-size: 40px;
 }
+
 .icon a:nth-of-type(3):hover {
     font-size: 50px;
 }
-/*로그인 버튼만 따로 싸이즈 크게  */
 
 
+
+/* 아이콘 호버 설정 */
 .icon a:hover {
     font-size: 30px;
     color: rgb(255, 255, 255);
     opacity: 1;
 }
-/* 아이콘 호버 설정 */
+
 
 .logo:hover {
-    box-shadow: 0px 10px 10px rgb(255, 255, 255);
+    box-shadow: 30px 30px 40px rgb(253, 2, 220);
 }
+
+
 /* 로고 박스 쉐도우 컬러  */
 
 li:hover {
     font-size: 35px;
-    text-shadow: 0px 10px 10px white;
-    color: rgb(255, 255, 255);
+    text-shadow: 0px 10px 10px rgb(236, 11, 11);
+    color: rgb(226, 17, 209);
 }
+
 /* 메뉴들 허버 크기및컬러 설정  */
