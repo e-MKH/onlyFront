@@ -43,6 +43,8 @@ main hr {
     width: 75%;
     display: inline-block;
     text-align: center;
+
+    margin: 7px;
 }
 
 
