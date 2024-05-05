@@ -1,8 +1,9 @@
+
 #login_wrap {
     background-color: rgba(255, 255, 255, 0.9);
     width: 50vh;
     margin: calc(50vh - 15%) auto;
-    padding: 20px;
+    padding: 30px 50px 30px;
     border-radius: 10px;
 }
 
@@ -17,7 +18,7 @@
 
 .btn_wrap,
 .input_wrap,
-.login_form { 
+.login_form {
     text-align: center;
     margin-top: 5px;
 }
@@ -37,7 +38,7 @@
 
 input[type="email"],
 input[type="password"] {
-    width: calc(100% - 20px);
+    width: calc(100% - 10px);
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -53,12 +54,13 @@ input[type="password"] {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    /* 배경색 변경 시 부드럽게 전환 */
+
 }
 
 
 /* 버튼 링크에 호버 효과 */
-#newAccount:hover {
+.btn_wrap a:hover,
+.btn_wrap a button:hover {
     background-color: rgb(84, 178, 209)
         /* 호버 시 배경색 변경 */
 }
@@ -88,87 +90,3 @@ input[type="password"] {
     bottom: 5px;
     color: gray
 }
-
-/* * {
-    margin: 0px;
-    text-align: center;
-}
-
-body {
-    background: url("../images/main_backgound.jpg") no-repeat fixed center/cover;
-}
-
-#wrap {
-    height: 100vh;
-}
-
-#login_wrap {
-    display: inline-block;
-    background-color: white;
-    width: 50%;
-    max-width: 1000px;
-    height: 30%;
-    opacity: .9;
-    border-radius: 10px;
-    margin-top: 30%;
-    color: rgb(81, 78, 78);
-
-}
-
-
-
-.login_form {
-    padding: 2%;
-}
-
-#login_title {
-    display: inline-block;
-    width: 50%;
-    padding: 10px;
-    font-size: 300%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(81, 78, 78);
-    text-align: center;
-}
-
-.login_form>div:nth-of-type(2),
-.login_form>div:nth-of-type(3),
-.login_form>div:nth-of-type(4) {
-    margin: 3%;
-}
-
-.login_form label {
-    display: inline-block;
-    width: 30px;
-    height: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.login_form input {
-    width: 200px;
-    height: 20px;
-    border: none;
-    border-bottom: 1px solid black;
-    text-align: left;
-}
-
-.btn_login {
-    display: block;
-    width: 200px;
-    height: 30px;
-    border: 1px solid ghostwhite;
-    border-radius: 5px;
-    margin-left: 30px;
-}
-
-.btn_wrap {
-    margin: 0;
-    display: block;
-    text-align: center;
-
-}
-
-.btn_wrap a {
-    text-decoration: none;
-    border: 1px solid 1px;
-} */
