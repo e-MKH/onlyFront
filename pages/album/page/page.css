@@ -18,7 +18,8 @@ main h1 {
     margin: 0;
 }
 
-main span {
+main span,
+article>div {
     padding: 4%;
 
     display: inline-block;
@@ -55,4 +56,3 @@ main div div img {
     margin-top: 25px;
     margin-bottom: 25px;
 }
-
