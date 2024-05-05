@@ -4,8 +4,9 @@
 }
 
 body {
-    background: url(../images/main_backgound.jpg);
+    background: url(../images/newbackground.jpg);
     background-size: cover;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
 }

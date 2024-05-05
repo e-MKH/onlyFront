@@ -37,4 +37,11 @@
         .solo_picture:hover {
             transform: scale(1.2);
         }
-           
+        
+        body {
+            background: url(/source/images/giro_image/black-background.jpg)!important;
+            background-size: cover!important;
+            background-repeat:no-repeat!important;
+            background-attachment: fixed;
+            background-position: center;
+        }
