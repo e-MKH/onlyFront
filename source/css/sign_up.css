@@ -61,7 +61,6 @@
     font-size: 30px;
     color: gray;
     font-weight: bolder;
-    padding-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -128,6 +127,10 @@
 }
 
 /* 약관 내용을 기본적으로 숨김 */
+/* .agreement {
+    box-sizing: border-box;
+} */
+
 .agreement_content {
     display: none;
     background-color: #f9f9f9;
@@ -149,9 +152,13 @@
 }
 
 .agreement_content ul {
+    margin-left: 20px;
     text-align: left;
+
 }
 
+
+/* 주소찾기 */
 .address_wrap {
     position: relative;
     display: inline-block;
@@ -172,6 +179,10 @@ input[id="agree"]:checked+.agreement_content {
     color: #fff;
     font-size: 15px;
     font-weight: bold;
+}
+
+#findAddressBtn:hover {
+    background-color: rgb(84, 178, 209)
 }
 
 
