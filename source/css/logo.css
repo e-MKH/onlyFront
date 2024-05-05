@@ -6,6 +6,7 @@
 body {
     background: url(../images/newbackground.png);
     background-size: cover;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: center;
 }
@@ -79,6 +80,8 @@ footer {
     width: 25px;
     margin: 0 3px;
     fill: gray;
+    
+
     transition-duration: 1s;
 }
 
