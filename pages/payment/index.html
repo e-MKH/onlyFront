@@ -26,12 +26,13 @@
 <body>
     <header>
         <div>
-            <a href="../menu/menu.html"> <img src="/source/images/LOGO.svg" class="logo"></a>
+            <a href="../menu/menu.html">
+                <img src="/source/images/LOGO.svg" class="logo" alt="logo_img"></a>
         </div>
 
-        <nav class="do">
+        <!-- <nav class="do">
             <a href="../menu/menu.html" class="fa-solid fa-bars "></i></a>
-        </nav>
+        </nav> -->
     </header>
     <div class="payment_grid">
         <div class="payment_container">
@@ -43,7 +44,6 @@
                         <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-
                         <label for="address">주소</label>
                         <div class="delivery-address">
                             <input type="text" id="address" name="address" required>
@@ -87,13 +87,23 @@
                     </tr>
                     <tr class="product">
                         <td class="product-image">
-                            <img src="../../source/images/yeonjung_image/charm_set_minji.png" alt="charm_set_minji"">
-                    </td>
-                    <td class=" product-info">
-                            <br>Minji 키링</p>
+                            <img src="../../source/images/yeonjung_image/charm_set_minji.png" alt="charm_set_minji">
+                        </td>
+                        <td class=" product-info">
+                            <p>Minji 키링</p>
                         </td>
                         <td>1</td>
-                        <td>₩50,000</td>
+                        <td>₩30,000</td>
+                    </tr>
+                    <tr class="product">
+                        <td class="product-image">
+                            <img src="../../source/images/yeonjung_image/newjeans_cropTee.png" alt="newjeans_cropTee">
+                        </td>
+                        <td class=" product-info">
+                            <p>크롭티</p>
+                        </td>
+                        <td>1</td>
+                        <td>₩102,000</td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -105,24 +115,61 @@
             </table>
 
             <div id="payment_methods">
-                <input type="radio" id="credit-card" name="payment-method" value="credit-card">
-                <label for="credit-card"><img src="../../source/images/yeonjung_image/credit-card-solid.svg" alt="신용카드">
-                    신용카드</label>
-                <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
-                <label for="bank-transfer"><img src="../../source/images/yeonjung_image/money-check-dollar-solid.svg"
-                        alt="계좌이체">
-                    계좌이체</label>
-                <input type="radio" id="easy-payment" name="payment-method" value="easy-payment">
-                <label for="easy-payment"><img src="../../source/images/yeonjung_image/money-bill-solid.svg" alt="간편결제">
-                    간편결제</label>
+                <h4>결제수단</h4>
+                <div>
+                    <div>
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                        <label for="credit-card"><img src="../../source/images/yeonjung_image/credit-card-solid.svg"
+                                alt="신용카드">
+                            신용카드</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                        <label for="bank-transfer"><img
+                                src="../../source/images/yeonjung_image/money-check-dollar-solid.svg" alt="계좌이체">
+                            계좌이체</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="easy-payment" name="payment-method" value="easy-payment">
+                        <label for="easy-payment"><img src="../../source/images/yeonjung_image/money-bill-solid.svg"
+                                alt="간편결제">
+                            간편결제</label>
+                    </div>
+                </div>
             </div>
-
+            <div class="pay_agreement_wrap">
+                <div>
+                    <h4>이용약관</h4>
+                    <div>
+                        <input type="checkbox" id="allAgree" required>
+                        <label for="agree">전체 약관 동의</label>
+                    </div>
+                </div>
+                <div class="pay_agreement_content">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="first_agree" required>
+                            <label for="first_agree">통신과금서비스 이용약관 동의</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="second_agree" required>
+                            <label for="second_agree">개인정보 수집 및 이용에 대한 동의</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="third_agree" required>
+                            <label for="third_agree">개인정보 제3자 제공약관 동의</label>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
             <a href="../../pages/menu/menu.html" id="checkout-button">결제</a>
         </div>
         <div class="recently_container">
             <div class="recently_product">
                 <h3> 최근 본 상품 </h3>
-                <a href="../goods/detail.html"><img src="../../source\images\yeonjung_image\newjeans_cropTee.png"></a>
+                <a href="../goods/detail.html"><img src="../../source/images/yeonjung_image/newjeans_cropTee.png"
+                        alt="newjeans_cropTee.png"></a>
                 <img src="../../source/images/yeonjung_image/newjeans_photoset_ver.1.png">
             </div>
         </div>
