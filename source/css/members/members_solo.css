@@ -17,11 +17,26 @@ nav>ul{
 }
 
 nav>ul>li:hover ul{
-       
+    
         animation: ani 1s both;
-        /* height: 150px; */
-        
 }
+
+
+@keyframes ani{
+    from{
+        opacity: 0;
+        /* height: 0; */
+        transform: translate(0vw); ;
+        
+    
+    }
+    to{
+        transform: translate(1.5vw); ;
+        opacity: 1;
+        /* height: 150px; */
+    }
+}
+
 nav>ul>li>ul{
     position: relative;
     /* left: 10vw; */
@@ -38,24 +53,8 @@ a{
 nav>ul>li ul{
     height: 0;
     opacity: 0;
-    /* overflow: hidden; */
-    /* animation: ani 2s ease-in-out 0s; */
 }
 
-@keyframes ani{
-    from{
-        opacity: 0;
-        /* height: 0; */
-        transform: translate(0vw); ;
-        
-    
-    }
-    to{
-        transform: translate(1.5vw); ;
-        opacity: 1;
-        /* height: 150px; */
-    }
-}
 
 tr img{
     width: 15vw;
