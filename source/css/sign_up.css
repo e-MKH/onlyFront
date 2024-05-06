@@ -126,10 +126,7 @@
     /* 라벨의 오른쪽 여백 */
 }
 
-/* 약관 내용을 기본적으로 숨김 */
-/* .agreement {
-    box-sizing: border-box;
-} */
+/* 약관 내용 숨김 */
 
 .agreement_content {
     display: none;
