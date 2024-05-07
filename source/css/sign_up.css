@@ -111,7 +111,7 @@ div:not([class="phoneNum"]) input {
     padding-left: 10px;
 }
 
-/* .address_wrap label+input{
+/* .address{
     width: 55%;
     margin-right: 30px;
 } */
@@ -135,11 +135,13 @@ div:not([class="phoneNum"]) input {
 
 .agreement_content {
     /* display: none; */
+    margin: 0 20px 0;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
 }
+
 
 /* 약관 label에 hover 시 약관 내용을 나타나게 함 */
 
@@ -149,6 +151,7 @@ div:not([class="phoneNum"]) input {
 } */
 
 .agreement_content p {
+    margin-top: 10px;
     text-align: justify;
     overflow: auto
 }
