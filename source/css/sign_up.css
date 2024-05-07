@@ -36,7 +36,7 @@
 
 .phoneNum {
     display: inline-flex;
-    width: 60%;
+    width: 61%;
 }
 
 .phoneNum>span {
@@ -104,6 +104,11 @@
     border: none;
     border-bottom: 1px solid black;
     text-align: left;
+
+}
+
+div:not([class="phoneNum"]) input {
+    padding-left: 10px;
 }
 
 /* .address_wrap label+input{
@@ -129,7 +134,7 @@
 /* 약관 내용 숨김 */
 
 .agreement_content {
-    display: none;
+    /* display: none; */
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     padding: 10px;
@@ -138,10 +143,10 @@
 
 /* 약관 label에 hover 시 약관 내용을 나타나게 함 */
 
-.agreement:hover .agreement_content {
+/* .agreement:hover .agreement_content {
     display: block;
     animation: fadeIn 0.5s ease-in-out;
-}
+} */
 
 .agreement_content p {
     text-align: justify;
@@ -154,6 +159,11 @@
 
 }
 
+/* 약관 체크하면 사라지지 않게. */
+
+#agree:checked+label+div {
+    display: block;
+}
 
 /* 주소찾기 */
 .address_wrap {
