@@ -39,8 +39,18 @@
                     <input type="text" class="form-control" id="name" placeholder="이름을 입력하세요" value="" required>
                 </div>
                 <div>
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="ID 로 사용할 email" required>
+                </div>
+                <div>
                     <label for="name">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="영문/숫자 포함 최대 12자리" maxlength="12" required>
+                    <input type="password" class="form-control" id="password" placeholder="영문/숫자 포함 최대 12자리"
+                        maxlength="12" required>
+                </div>
+                <div>
+                    <label for="name">Password check</label>
+                    <input type="password" class="form-control" id="password" placeholder="영문/숫자 포함 최대 12자리"
+                        maxlength="12" required>
                 </div>
 
                 <div>
@@ -51,10 +61,6 @@
                         <input type="text" size="1" minlength="4" maxlength="4" required>
                     </div>
                 </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="zxduswjd@naver.com" required>
-                </div>
                 <div class="address_wrap">
 
                     <label for="address">Address</label>
@@ -64,8 +70,6 @@
                 </div>
 
                 <div class="agreement">
-                    <input type="checkbox" id="agree" required>
-                    <label for="agree">회원가입 약관에 동의합니다.</label>
                     <div class="agreement_content">
                         <h2>회원가입 약관</h2>
                         <p>
@@ -80,8 +84,9 @@
                             <li>부적절한 내용의 게시물을 게시하는 행위</li>
                             <li>저작권 침해를 일으키는 행위</li>
                         </ul>
-
                     </div>
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">회원가입 약관에 동의합니다.</label>
                 </div>
 
                 <div class="btn_wrap">
