@@ -255,3 +255,8 @@
      margin-top: 20px;
      width: 100%;
  }
+
+ div {
+     text-decoration-line: none;
+     color: aliceblue;
+ }
