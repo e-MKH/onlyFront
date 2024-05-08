@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    
+
 }
 
 h4 {
@@ -17,7 +17,7 @@ h4 {
 
 body {
     background-color: rgb(0, 0, 0);
-    
+
 }
 
 .video_container {
@@ -42,7 +42,7 @@ body {
     height: 80vh;
 }
 
-.list  li {
+.list li {
     position: relative;
     width: 200px;
     left: calc((17.5vw - 200px)/2 + 3vw);
@@ -65,13 +65,13 @@ main {
 }
 
 .menu_list>a:hover {
-    
+
     font-size: 35px;
     text-shadow: 0px 10px 10px rgb(212, 12, 12);
     color: rgb(211, 25, 174);
 }
 
-.menu_list>a{
+.menu_list>a {
     transition: 0.5s;
 }
 
@@ -89,14 +89,14 @@ main {
     position: relative;
     width: 20;
     animation: slide 2s;
-    
+
 }
 
 @keyframes slide {
     from {
         left: -30vw;
         opacity: 0.1;
-        
+
     }
 
     to {
@@ -108,13 +108,13 @@ main {
 .ALBUMS {
     position: relative;
     animation: slide 2.2s;
-   
+
 }
 
 .GOODS {
     position: relative;
     animation: slide 2.4s;
-    
+
 }
 
 .EVENT {
@@ -123,10 +123,10 @@ main {
 }
 
 .list>ul>li>a {
-    
+
     text-decoration-line: none;
     display: block;
-    
+
 }
 
 .list div:nth-of-type(2) {
@@ -145,14 +145,14 @@ main {
     opacity: .7;
     animation: icon_slide 2.8s;
     bottom: -2vh;
-    left:4px
+    left: 4px
 }
 
 @keyframes icon_slide {
     from {
         left: -30vw;
         opacity: 0.1;
-        
+
     }
 
     to {
@@ -161,9 +161,10 @@ main {
     }
 }
 
-h6{
+h6 {
     font-size: 0.01px;
 }
+
 .icon a:nth-of-type(3) {
     font-size: 40px;
 }
@@ -180,6 +181,16 @@ h6{
     opacity: 1;
 }
 
+
+
+
+.member,
+.ALBUMS,
+.GOODS,
+.EVENT {
+    text-decoration-line: none;
+    color: aliceblue;
+}
 
 
 
@@ -225,5 +236,3 @@ footer {
     transform: scale(1.2);
     transition-duration: 1s;
 }
-
-
