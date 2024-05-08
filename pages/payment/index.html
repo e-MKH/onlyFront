@@ -1,0 +1,209 @@
+<!--
+    @author:우연정
+    @date: 2024.04.21
+    @description : 결제 메인화면 
+
+  DATE              AUTHOR             NOTE
+  -----------------------------------------------------------
+  2024/04/21        우연정            최초 생성
+ 
+-->
+<!-- 1차 -> 결제버튼 후 pages/index.html 으로 이동
+        결제 할 상품 목록, 결제 총 금액, 결제방법  
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 메인화면</title>
+    <link rel="stylesheet" href="../../source/css/payment.css">
+    <link rel="stylesheet" href="../../source/css/logo.css">
+    <script src="https://kit.fontawesome.com/30b28e001e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../menu/menu.html">
+                <img src="/source/images/LOGO.svg" class="logo" alt="logo"></a>
+        </div>
+    </header>
+    <div class="payment_grid">
+        <div class="payment_container">
+            <div class="delivery-info">
+                <h2>배송지 정보 입력</h2>
+                <form id="delivery-form">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">주소</label>
+                        <div class="delivery-address">
+                            <input type="text" id="address" name="address" required>
+                            <button type="button" id="findAddressBtn">주소 찾기</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="phone">전화번호</label>
+                        <div class="delivery-phone">
+                            <input type="text" value="010" readonly size="1"><span>&#45;</span>
+                            <input type="text" size="1" minlength="3" maxlength="4" required><span> &#45; </span>
+                            <input type="text" size="1" minlength="4" maxlength="4" required>
+                        </div>
+                    </div>
+                    <!-- 필요한 다른 폼 요소들 추가 -->
+                    <button type="submit">저장</button>
+                </form>
+            </div>
+            <table class="product-list">
+                <thead>
+                    <tr>
+                        <th>제품 사진</th>
+                        <th>상품명</th>
+                        <th>수량</th>
+                        <th>가격</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="product">
+                        <td class="product-image">
+                            <img src="../../source/images/yeonjung_image/light_stick_Danielle.png"
+                                alt="light_stick_Danielle">
+                        </td>
+                        <td class="product-info">
+                            <p>Danielle 라이트 스틱</p>
+                        </td>
+                        <td>1</td>
+                        <td>₩22,000</td>
+                    </tr>
+                    <tr class="product">
+                        <td class="product-image">
+                            <img src="../../source/images/yeonjung_image/charm_set_minji.png" alt="charm_set_minji">
+                        </td>
+                        <td class=" product-info">
+                            <p>Minji 키링</p>
+                        </td>
+                        <td>1</td>
+                        <td>₩30,000</td>
+                    </tr>
+                    <tr class="product">
+                        <td class="product-image">
+                            <img src="../../source/images/yeonjung_image/newjeans_cropTee.png" alt="newjeans_cropTee">
+                        </td>
+                        <td class=" product-info">
+                            <p>크롭티</p>
+                        </td>
+                        <td>1</td>
+                        <td>₩50,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="total-amount">결제 총 금액 :
+                            ₩102,000</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div id="payment_methods">
+                <h4>결제수단</h4>
+                <div>
+                    <div>
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                        <label for="credit-card"><img src="../../source/images/yeonjung_image/credit-card-solid.svg"
+                                alt="신용카드">
+                            신용카드</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                        <label for="bank-transfer"><img
+                                src="../../source/images/yeonjung_image/money-check-dollar-solid.svg" alt="계좌이체">
+                            계좌이체</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="easy-payment" name="payment-method" value="easy-payment">
+                        <label for="easy-payment"><img src="../../source/images/yeonjung_image/money-bill-solid.svg"
+                                alt="간편결제">
+                            간편결제</label>
+                    </div>
+                </div>
+            </div>
+            <div class="pay_agreement_wrap">
+                <div>
+                    <h4>이용약관</h4>
+                    <div>
+                        <input type="checkbox" id="allAgree" required>
+                        <label for="agree">전체 약관 동의</label>
+                    </div>
+                </div>
+                <div class="pay_agreement_content">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="first_agree" required>
+                            <label for="first_agree">통신과금서비스 이용약관 동의</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="second_agree" required>
+                            <label for="second_agree">개인정보 수집 및 이용에 대한 동의</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="third_agree" required>
+                            <label for="third_agree">개인정보 제3자 제공약관 동의</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="../../pages/menu/menu.html" id="checkout-button">결제</a>
+        </div>
+        <div class="recently_container">
+            <div class="recently_product">
+                <h3> 최근 본 상품 </h3>
+                <a href="../goods/detail.html"><img src="../../source/images/yeonjung_image/newjeans_cropTee.png"
+                        alt="newjeans_cropTee.png"></a>
+                <img src="../../source/images/yeonjung_image/newjeans_photoset_ver.1.png" alt="photoset_ver.1">
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="f_logo">
+                <img src="../../source/images/ador.svg" alt="ADOR" style="width: 100px;">
+            </div>
+
+            <div class="info">
+                조명 : 상부상조(相扶相助) | 조장: 방기로 | 조원: 전용덕, 우연정, 민기훈 | 소속 : KDT 6기
+            </div>
+
+
+            <div class="href">
+                <a href="https://ador.world/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM325.8 139.7l14.4 14.4c15.6 15.6 15.6 40.9 0 56.6l-21.4 21.4-71-71 21.4-21.4c15.6-15.6 40.9-15.6 56.6 0zM119.9 289L225.1 183.8l71 71L190.9 359.9c-4.1 4.1-9.2 7-14.9 8.4l-60.1 15c-5.5 1.4-11.2-.2-15.2-4.2s-5.6-9.7-4.2-15.2l15-60.1c1.4-5.6 4.3-10.8 8.4-14.9z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/alldoorsoneroom" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/alldoorsoneroom/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

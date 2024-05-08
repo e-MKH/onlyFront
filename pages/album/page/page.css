@@ -1,0 +1,58 @@
+main {
+    text-align: center;
+    margin: 0;
+}
+
+main video,
+main img {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    width: 350px;
+}
+
+main h1 {
+    font-size: 300%;
+    color: white;
+    text-shadow: 2px 2px 2px cornflowerblue;
+
+    margin: 0;
+}
+
+main span,
+article>div {
+    padding: 4%;
+
+    display: inline-block;
+    background-color: rgba(240, 255, 255, 0.7);
+    width: 70%;
+    min-width: 400px;
+
+    font-size: 14px;
+    text-align: initial;
+    white-space: pre-line;
+    line-height: 2;
+
+    vertical-align: top;
+
+    font-weight: bold;
+
+    /* border-radius: 28px; */
+}
+
+
+main hr {
+    width: 75%;
+    display: inline-block;
+    text-align: center;
+
+    margin: 7px;
+}
+
+
+main div div img {
+    width: 50px;
+    height: 50px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+}

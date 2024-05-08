@@ -1,0 +1,32 @@
+main {
+	text-align: center;
+}
+
+main div {
+	display: inline-block;
+	width: 80%;
+}
+
+main hr {
+	width: 70%;
+	display: inline-block;
+	text-align: center;
+}
+
+main img {
+	width: 250px;
+	transition-duration: 1s;
+
+	margin: 14px;
+}
+
+main img:hover {
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
+
+main h1 {
+	font-size: 250%;
+	color: white;
+	text-shadow: 2px 2px 2px cornflowerblue;
+}

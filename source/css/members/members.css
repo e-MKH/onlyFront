@@ -1,0 +1,49 @@
+
+        
+        main{
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            margin-bottom: 400px;
+            margin-top: 0px;
+            position: relative;
+            /* transition-duration: 0.7s; */
+            z-index: -1;
+
+        }
+
+        #main_video {
+            display: flex;
+            justify-content: center;
+            width: 65vw;
+            transition-duration: 0.7s;
+        }
+
+        .members{
+            display:flex;
+            justify-content: space-evenly;
+                }
+        
+        
+        video {
+            width: 15vw;
+            margin-bottom: 60px;
+        }
+        .solo_picture{
+            transition: 0.8s;
+            position: relative;
+            bottom: 25vh;
+        }
+        .solo_picture:hover {
+            transform: scale(1.2);
+        }
+        
+        body {
+            background: url(/source/images/giro_image/black-background.jpg)!important;
+            background-size: cover!important;
+            background-repeat:no-repeat!important;
+            background-attachment: fixed !important;
+            background-position: center;
+        }
+
+        a{height: 1px;}

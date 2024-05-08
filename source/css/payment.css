@@ -1,0 +1,328 @@
+* {
+    list-style: none;
+}
+
+.payment_grid {
+    display: grid;
+    max-width: 1000px;
+    grid-template: repeat(3, 1fr)/ 8fr 2fr;
+    place-content: end;
+    margin: 30px auto;
+    gap: 40px;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+.payment_container {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* max-width: 900px; */
+    /* margin: 20px auto; */
+    margin-left: 30;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product-list {
+    background-color: #fff;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-list th,
+.product-list td {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-list td img {
+    filter: opacity(1);
+    max-width: 100px;
+    height: auto;
+}
+
+.total-amount {
+    text-align: right;
+}
+
+#payment_methods {
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#payment_methods>h4 {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid silver;
+}
+
+#payment_methods>div {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+
+
+/* #payment_methods label {
+    display: flex;
+    align-items: start;
+    margin-right: 10px;
+    font-weight: bold;
+} */
+
+#payment_methods label img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+
+.product-list {
+    border-collapse: collapse;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product td {
+    padding: 10px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    /* 투명도 조절 (필요한 만큼 조절) */
+}
+
+.product-info {
+    opacity: 0.9;
+
+    /* 투명도 조절 (필요한 만큼 조절) */
+
+}
+
+
+
+.total-amount {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.product-list thead tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* #checkout-button {
+    width: calc(100%);
+   
+    margin: 0 auto;
+} */
+
+
+#checkout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(84, 178, 209);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#checkout-button:hover {
+    background-color: rgb(71, 149, 175);
+}
+
+/* ======배송지 정보 받기 */
+.delivery-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.delivery-info h2 {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.form-group label {
+    flex: 1;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+    flex: 2;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /* 입력 요소의 너비를 조정하고 오른쪽에 마진 추가 */
+    padding: 8px;
+    margin-top: 5px;
+    /* 위 아래 여백 추가 */
+}
+
+.form-group input[type="text"]:last-child {
+    margin-right: 0;
+}
+
+.form-group span {
+    margin: 0 5px;
+}
+
+.delivery-phone {
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+}
+
+.delivery-address {
+    flex: 2;
+    display: flex;
+    align-items: center;
+
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(84, 178, 209);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    /* 버튼 위쪽 여백 추가 */
+}
+
+.payment_container button[type="submit"]:hover {
+    background-color: rgb(71, 149, 175);
+}
+
+#findAddressBtn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: rgb(84, 178, 209);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#findAddressBtn:hover {
+    background-color: rgb(71, 149, 175);
+
+}
+
+.address_wrap input[type="text"] {
+    width: calc(100% - 200px);
+}
+
+.address_wrap button {
+    position: relative;
+    right: 0;
+    top: 35%;
+    width: 100px;
+
+}
+
+.recently_container {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: auto;
+    /* position: relative; */
+}
+
+/* ==== 최근 본 상품 ===== */
+
+
+
+.recently_container {
+    display: flex;
+    height: 40%;
+    place-content: center;
+    border-radius: 5px;
+
+
+}
+
+.recently_product {
+    display: grid;
+    width: 90%;
+    background-color: #fff;
+    place-content: center;
+    margin: 10px 0 10px;
+    border-radius: 5px;
+
+}
+
+.recently_product h3 {
+    margin-top: 20px;
+    text-align: center;
+    border-bottom: 2px solid lightgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+.recently_container img {
+    padding: 10%;
+    max-width: 80%;
+
+}
+
+
+/* ======약관 라벨======== */
+
+.pay_agreement_wrap {
+    display: grid;
+    grid-template-rows: .7fr 2fr;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+.pay_agreement_wrap>div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay_agreement_wrap>div:nth-of-type(2) {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}

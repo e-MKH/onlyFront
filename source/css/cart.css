@@ -1,0 +1,80 @@
+.cart_container {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.cart_container .cartBtn_wrap {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cart_container .checkout-button {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* 내부 padding 포함하여 너비 계산 */
+}
+
+.pay_btn {
+    background-color: lightblue;
+}
+
+.checkout-button:nth-child(1):hover {
+    background-color: silver
+}
+
+.shopping_btn {
+    background-color: lightgrey;
+}
+
+.checkout-button:nth-child(2):hover {
+
+    background-color: rgb(84, 178, 209)
+}
+
+.cart_list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 테이블 헤더 스타일 */
+.cart_list th {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.cart_list td {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+/* 제품 사진 스타일 */
+.cart_list img {
+    max-width: 100px;
+    height: auto;
+}
+
+.cart_list select {
+    width: 50px;
+}
