@@ -26,7 +26,7 @@
 <body>
     <header>
         <div>
-            <a href="../../index.html">
+            <a href="../menu/menu.html">
                 <img src="/source/images/LOGO.svg" class="logo" alt="logo"></a>
         </div>
     </header>
@@ -34,31 +34,36 @@
         <div class="payment_container">
             <form id="payment_form">
                 <div class="delivery-info">
-                    <h2>배송지 정보 입력</h2>
-                    <form id="delivery-form" validate>
-                        <div class="form-group">
-                            <label for="name">이름</label>
-                            <input type="text" id="name" name="name" required>
+                    <div class="delivery_title">
+                        배송지 정보 입력
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="받는 사람의 이름을 입력하세요." required>
+                    </div>
+                    <div class="form-group address_wrap">
+                        <!-- <div class="delivery-address"> -->
+                        <label for="address">Address</label>
+                        <?>
+                        <div class="findAddress_wrap">
+                            <input type="text" id="address" name="address" placeholder="주소" required>
+                            <button type="button" id="findAddressBtn">주소찾기</button>
                         </div>
-                        <div class="form-group address_wrap">
-                            <label for="address">주소</label>
-                            <div class="delivery-address">
-                                <input type="text" id="address" name="address" required>
-                                <button type="button" id="findAddressBtn">주소 찾기</button>
-                            </div>
+                        <div>
+                            <input type="text" id="address" name="address" placeholder="상세주소" required>
                         </div>
-
-                        <div class="form-group">
-                            <label for="phone">전화번호</label>
-                            <div class="delivery-phone">
-                                <input type="text" value="010" readonly size="1"><span>&#45;</span>
-                                <input type="text" size="1" minlength="3" maxlength="4" required><span> &#45; </span>
-                                <input type="text" size="1" minlength="4" maxlength="4" required>
-                            </div>
+                        <!-- </div>
+                       -->
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <div class="delivery-phone">
+                            <input type="text" id="delivery_phone" name="phone" maxlength="15"
+                                placeholder="-를 포함하여 입력해주세요.">
                         </div>
-                        <!-- 필요한 다른 폼 요소들 추가 -->
-                        <button type="submit">저장</button>
-                    </form>
+                    </div>
+                    <!-- 필요한 다른 폼 요소들 추가 -->
+                    <button type="submit">저장</button>
                 </div>
                 <table class="product-list">
                     <thead>
@@ -76,7 +81,7 @@
                                     alt="light_stick_Danielle">
                             </td>
                             <td class="product-info">
-                                <p>Danielle 라이트 스틱</p>
+                                <p>Danielle <br>라이트 스틱</p>
                             </td>
                             <td>1</td>
                             <td>₩22,000</td>
@@ -86,7 +91,7 @@
                                 <img src="../../source/images/yeonjung_image/charm_set_minji.png" alt="charm_set_minji">
                             </td>
                             <td class=" product-info">
-                                <p>Minji 키링</p>
+                                <p>Minji<br>키링</p>
                             </td>
                             <td>1</td>
                             <td>₩30,000</td>
@@ -158,9 +163,10 @@
                             </li>
                         </ul>
                     </div>
-            </form>
+           
         </div>
         <button type="submit">결제하기</a>
+        </form>
     </div>
     <div class="recently_container">
         <div class="recently_product">
