@@ -26,148 +26,150 @@
 <body>
     <header>
         <div>
-            <a href="../menu/menu.html">
+            <a href="../../index.html">
                 <img src="/source/images/LOGO.svg" class="logo" alt="logo"></a>
         </div>
     </header>
     <div class="payment_grid">
         <div class="payment_container">
-            <div class="delivery-info">
-                <h2>배송지 정보 입력</h2>
-                <form id="delivery-form">
-                    <div class="form-group">
-                        <label for="name">이름</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">주소</label>
-                        <div class="delivery-address">
-                            <input type="text" id="address" name="address" required>
-                            <button type="button" id="findAddressBtn">주소 찾기</button>
+            <form id="payment_form">
+                <div class="delivery-info">
+                    <h2>배송지 정보 입력</h2>
+                    <form id="delivery-form" validate>
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group address_wrap">
+                            <label for="address">주소</label>
+                            <div class="delivery-address">
+                                <input type="text" id="address" name="address" required>
+                                <button type="button" id="findAddressBtn">주소 찾기</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">전화번호</label>
+                            <div class="delivery-phone">
+                                <input type="text" value="010" readonly size="1"><span>&#45;</span>
+                                <input type="text" size="1" minlength="3" maxlength="4" required><span> &#45; </span>
+                                <input type="text" size="1" minlength="4" maxlength="4" required>
+                            </div>
+                        </div>
+                        <!-- 필요한 다른 폼 요소들 추가 -->
+                        <button type="submit">저장</button>
+                    </form>
+                </div>
+                <table class="product-list">
+                    <thead>
+                        <tr>
+                            <th>제품 사진</th>
+                            <th>상품명</th>
+                            <th>수량</th>
+                            <th>가격</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="product">
+                            <td class="product-image">
+                                <img src="../../source/images/yeonjung_image/light_stick_Danielle.png"
+                                    alt="light_stick_Danielle">
+                            </td>
+                            <td class="product-info">
+                                <p>Danielle 라이트 스틱</p>
+                            </td>
+                            <td>1</td>
+                            <td>₩22,000</td>
+                        </tr>
+                        <tr class="product">
+                            <td class="product-image">
+                                <img src="../../source/images/yeonjung_image/charm_set_minji.png" alt="charm_set_minji">
+                            </td>
+                            <td class=" product-info">
+                                <p>Minji 키링</p>
+                            </td>
+                            <td>1</td>
+                            <td>₩30,000</td>
+                        </tr>
+                        <tr class="product">
+                            <td class="product-image">
+                                <img src="../../source/images/yeonjung_image/newjeans_cropTee.png"
+                                    alt="newjeans_cropTee">
+                            </td>
+                            <td class=" product-info">
+                                <p>크롭티</p>
+                            </td>
+                            <td>1</td>
+                            <td>₩50,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="total-amount">결제 총 금액 :
+                                ₩102,000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <div id="payment_methods">
+                    <h4>결제수단</h4>
+                    <div>
+                        <div>
+                            <input type="radio" id="credit-card" name="payment-method" value="credit-card">
+                            <label for="credit-card"><img src="../../source/images/yeonjung_image/credit-card-solid.svg"
+                                    alt="신용카드">
+                                신용카드</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                            <label for="bank-transfer"><img
+                                    src="../../source/images/yeonjung_image/money-check-dollar-solid.svg" alt="계좌이체">
+                                계좌이체</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="easy-payment" name="payment-method" value="easy-payment">
+                            <label for="easy-payment"><img src="../../source/images/yeonjung_image/money-bill-solid.svg"
+                                    alt="간편결제">
+                                간편결제</label>
                         </div>
                     </div>
-
-                    <div class="form-group">
-
-                        <label for="phone">전화번호</label>
-                        <div class="delivery-phone">
-                            <input type="text" value="010" readonly size="1"><span>&#45;</span>
-                            <input type="text" size="1" minlength="3" maxlength="4" required><span> &#45; </span>
-                            <input type="text" size="1" minlength="4" maxlength="4" required>
+                </div>
+                <div class="pay_agreement_wrap">
+                    <div>
+                        <h4>이용약관</h4>
+                        <div>
+                            <input type="checkbox" id="allAgree" required>
+                            <label for="allAgree">전체 약관 동의</label>
                         </div>
                     </div>
-                    <!-- 필요한 다른 폼 요소들 추가 -->
-                    <button type="submit">저장</button>
-                </form>
-            </div>
-            <table class="product-list">
-                <thead>
-                    <tr>
-                        <th>제품 사진</th>
-                        <th>상품명</th>
-                        <th>수량</th>
-                        <th>가격</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="product">
-                        <td class="product-image">
-                            <img src="../../source/images/yeonjung_image/light_stick_Danielle.png"
-                                alt="light_stick_Danielle">
-                        </td>
-                        <td class="product-info">
-                            <p>Danielle 라이트 스틱</p>
-                        </td>
-                        <td>1</td>
-                        <td>₩22,000</td>
-                    </tr>
-                    <tr class="product">
-                        <td class="product-image">
-                            <img src="../../source/images/yeonjung_image/charm_set_minji.png" alt="charm_set_minji">
-                        </td>
-                        <td class=" product-info">
-                            <p>Minji 키링</p>
-                        </td>
-                        <td>1</td>
-                        <td>₩30,000</td>
-                    </tr>
-                    <tr class="product">
-                        <td class="product-image">
-                            <img src="../../source/images/yeonjung_image/newjeans_cropTee.png" alt="newjeans_cropTee">
-                        </td>
-                        <td class=" product-info">
-                            <p>크롭티</p>
-                        </td>
-                        <td>1</td>
-                        <td>₩50,000</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="4" class="total-amount">결제 총 금액 :
-                            ₩102,000</td>
-                    </tr>
-                </tfoot>
-            </table>
-
-            <div id="payment_methods">
-                <h4>결제수단</h4>
-                <div>
-                    <div>
-                        <input type="radio" id="credit-card" name="payment-method" value="credit-card">
-                        <label for="credit-card"><img src="../../source/images/yeonjung_image/credit-card-solid.svg"
-                                alt="신용카드">
-                            신용카드</label>
+                    <div class="pay_agreement_content">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="first_agree" required>
+                                <label for="first_agree">통신과금서비스 이용약관 동의</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="second_agree" required>
+                                <label for="second_agree">개인정보 수집 및 이용에 대한 동의</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="third_agree" required>
+                                <label for="third_agree">개인정보 제3자 제공약관 동의</label>
+                            </li>
+                        </ul>
                     </div>
-                    <div>
-                        <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
-                        <label for="bank-transfer"><img
-                                src="../../source/images/yeonjung_image/money-check-dollar-solid.svg" alt="계좌이체">
-                            계좌이체</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="easy-payment" name="payment-method" value="easy-payment">
-                        <label for="easy-payment"><img src="../../source/images/yeonjung_image/money-bill-solid.svg"
-                                alt="간편결제">
-                            간편결제</label>
-                    </div>
-                </div>
-            </div>
-            <div class="pay_agreement_wrap">
-                <div>
-                    <h4>이용약관</h4>
-                    <div>
-                        <input type="checkbox" id="allAgree" required>
-                        <label for="agree">전체 약관 동의</label>
-                    </div>
-                </div>
-                <div class="pay_agreement_content">
-                    <ul>
-                        <li>
-                            <input type="checkbox" id="first_agree" required>
-                            <label for="first_agree">통신과금서비스 이용약관 동의</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="second_agree" required>
-                            <label for="second_agree">개인정보 수집 및 이용에 대한 동의</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="third_agree" required>
-                            <label for="third_agree">개인정보 제3자 제공약관 동의</label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <a href="../../pages/menu/menu.html" id="checkout-button">결제</a>
+            </form>
         </div>
-        <div class="recently_container">
-            <div class="recently_product">
-                <h3> 최근 본 상품 </h3>
-                <a href="../goods/detail.html"><img src="../../source/images/yeonjung_image/newjeans_cropTee.png"
-                        alt="newjeans_cropTee.png"></a>
-                <img src="../../source/images/yeonjung_image/newjeans_photoset_ver.1.png" alt="photoset_ver.1">
-            </div>
+        <button type="submit">결제하기</a>
+    </div>
+    <div class="recently_container">
+        <div class="recently_product">
+            <h3> 최근 본 상품 </h3>
+            <a href="../goods/detail.html"><img src="../../source/images/yeonjung_image/newjeans_cropTee.png"
+                    alt="newjeans_cropTee.png"></a>
+            <img src="../../source/images/yeonjung_image/newjeans_photoset_ver.1.png" alt="photoset_ver.1">
         </div>
+    </div>
 
     </div>
     <footer>

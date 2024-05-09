@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
 
+    user-select: none;
 }
 
 h4 {
@@ -11,7 +12,8 @@ h4 {
 }
 
 .list>div:nth-of-type(1) {
-    margin-top: 50px;
+    margin-top: 5vh;
+    
 
 }
 
@@ -27,9 +29,27 @@ body {
 }
 
 .logo img {
-    position: relative;
+    position: absolute;
+    /* position: relative; */
     width: 23vw;
-    animation: slide 1s;
+    left: 1vw;
+    margin-top: -2vw;
+    animation: logo 1.2s;
+}
+
+@keyframes logo {
+    from {
+        left: -30vw;
+        opacity: 0.1;
+
+    }
+
+    to {
+        opacity: 1;
+        left: 1vw;
+    }
+
+
 }
 
 .video_container {
@@ -38,6 +58,7 @@ body {
 
 .main_video {
     position: fixed;
+    
     width: 60vw;
     height: 80vh;
 }
@@ -54,42 +75,45 @@ a:visited {
 }
 
 main {
-    height: 640px;
+   
+    height: 80vh;
+    width: 25vw;
     text-align: center;
     list-style: none;
+    position: absolute;
     position: fixed;
-    top: 8vh;
-    left: 8vw;
+    top: 15vh;
+    left: 6vw;
+    
 
 
 }
 
 .menu_list>a:hover {
-
-    font-size: 35px;
+    
+    font-size: 2.2vw;
     text-shadow: 0px 10px 10px rgb(212, 12, 12);
     color: rgb(211, 25, 174);
 }
 
-.menu_list>a {
-    transition: 0.5s;
-}
+
+
+
 
 .menu_list {
-    margin-top: 60px;
-    font-size: 30px;
+    
+    margin-top: 8vh;
+    font-size: 1.8vw;
     color: rgb(230, 221, 221);
     transition-property: font-size;
-    transition-duration: .5s;
     font-weight: bold;
 
 }
 
 .member {
     position: relative;
-    width: 20;
-    animation: slide 2s;
-
+    animation: slide 1.6s;
+    transition: 0.5s;
 }
 
 @keyframes slide {
@@ -107,19 +131,21 @@ main {
 
 .ALBUMS {
     position: relative;
-    animation: slide 2.2s;
+    animation: slide 2s;
+    transition: 0.5s;
 
 }
 
 .GOODS {
     position: relative;
     animation: slide 2.4s;
-
+    transition: 0.5s;
 }
 
 .EVENT {
     position: relative;
-    animation: slide 2.6s;
+    animation: slide 2.8s;
+    transition: 0.5s;
 }
 
 .list>ul>li>a {
@@ -133,19 +159,21 @@ main {
     width: 200px;
 }
 
+.icon {
+    position: absolute;
+}
+
 .icon a {
     display: inline;
     position: relative;
-    font-size: 25px;
-    transition-property: font-size;
-    transition-duration: 1s;
+    font-size: 2vw;
     color: gray;
     margin: .5vw;
-    margin-top: 0.5vw;
+    margin-top: 6vh;
     opacity: .7;
-    animation: icon_slide 2.8s;
+    animation: icon_slide 3.1s;
     bottom: -2vh;
-    left: 4px
+    left: 3.1vw;
 }
 
 @keyframes icon_slide {
@@ -157,7 +185,7 @@ main {
 
     to {
         opacity: 0.7;
-        left: 4px;
+        left: 3.1vw;
     }
 }
 
@@ -166,19 +194,18 @@ h6 {
 }
 
 .icon a:nth-of-type(3) {
-    font-size: 40px;
+    font-size: 3vw;
 }
 
 .icon a:nth-of-type(3):hover {
-    font-size: 50px;
+    font-size: 3.8vw;
 }
 
-
-
 .icon a:hover {
-    font-size: 30px;
+    font-size: 2.8vw;
     color: rgb(255, 255, 255);
     opacity: 1;
+    transition-duration: 1s;
 }
 
 

@@ -107,6 +107,10 @@
 
 }
 
+.sign_form .email_wrap>input {
+    width: 47%;
+}
+
 div:not([class="phoneNum"]) input {
     padding-left: 10px;
 }
@@ -199,7 +203,45 @@ input[id="agree"]:checked+.agreement_content {
 
 .address_wrap button {
     position: absolute;
-    right: 22%;
-    top: 35%;
+    right: 20%;
+    top: 18%;
     width: 80px;
+}
+
+/* email  중복버튼 수정 */
+.email_wrap {
+    position: relative;
+    display: inline-block;
+}
+
+#double_chk {
+    margin-left: 10px;
+    padding: 5px 5px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+    .sign_wrap {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .sign_form>div input {
+        width: 80%;
+    }
+
+    #name,
+    #password,
+    #password_chk,
+    #address,
+    #detail_address {
+        width: 62%;
+    }
 }

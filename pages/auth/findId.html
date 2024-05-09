@@ -1,93 +1,42 @@
-<!--     
-    @author:우연정
-    @date: 2024.04.21
-    @description : 장바구니화면
-
-  DATE              AUTHOR             NOTE
-  -----------------------------------------------------------
-  2024/04/21        우연정            최초 생성
- 
--->
-<!-- 1차 -> 결제 버튼 클릭시 payment/index.html 화면으로 이동
-            - 상품리스트/ 각 상품 체크박스 ,이미지, 상품명, 금액 , 설명, 수량, 결제 버튼
-            - 테이블로 묶기
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>장바구니</title>
-    <link rel="stylesheet" href="../../source/css/cart.css">
+    <title>ID 찾기</title>
     <link rel="stylesheet" href="../../source/css/logo.css">
-    <script src="https://kit.fontawesome.com/30b28e001e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../source/css/findIdPw.css">
 </head>
 
 <body>
     <header>
         <div>
-            <a href="../../index.html"> <img src="/source/images/LOGO.svg" class="logo" alt="logo"></a>
+            <a href="../menu/menu.html"> <img src="/source/images/LOGO.svg" class="logo" alt="logo"></a>
         </div>
     </header>
-    <div class="cart_container">
-        <form>
-            <table class="cart_list">
-                <thead>
-                    <tr>
-                        <th><input type="checkbox" class="checkbox"></th>
-                        <th>제품 사진</th>
-                        <th>상품명</th>
-                        <th>수량</th>
-                        <th>가격</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox" class="checkbox"></td>
-                        <td>
-                            <img src="../../source/images/yeonjung_image/light_stick_Danielle.png"
-                                alt="light_stick_Danielle">
-                        </td>
-                        <td class="product-info">
-                            Danielle 라이트 스틱
-                        </td>
-                        <td>
-                            <select id="count" name="count">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </td>
-                        <td>₩22,000</td>
-                    </tr>
 
-                    <tr>
-                        <td><input type="checkbox" class="checkbox"></td>
-                        <td>
-                            <img src="../../source/images/yeonjung_image/light_stick_haerin.png"
-                                alt="light_stick_haerin">
-                        </td>
-                        <td class="product-info">
-                            Haerin 라이트 스틱
-                        </td>
-                        <td>
-                            <select id="amount" name="amount">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </td>
-                        <td>₩22,000</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="cartBtn_wrap">
-                <a href="../goods/index.html" class="checkout-button shopping_btn">쇼핑하기</a>
-                <a href="../payment/index.html" class="checkout-button pay_btn">결제하기</a>
+    <div id="find_id_wrap">
+        <div id="findId_wrap">
+            <div id="find_id_title">Find ID</div>
+            <form id="findId_form" validate>
+                <div class="input_wrap">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="이름" required>
+                    <div class="find_phoneNum">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" maxlength="15" placeholder="-를 포함하여 입력해주세요.">
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <button href="../pages/menu/menu.html">Find</button>
+                </div>
+            </form>
+            <div class="findIdPw">
+                <a href="../auth/findPw.html">Find PW | <a href="../auth/index.html" target="_self">Sign In</a></a> | <a
+                    href="../auth/sign_up.html">Sign Up</a>
             </div>
-        </form>
+        </div>
     </div>
     <footer>
         <div class="container">

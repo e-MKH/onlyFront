@@ -1,7 +1,7 @@
 #login_wrap {
     background-color: rgba(255, 255, 255, 0.9);
     width: 50vh;
-    margin: calc(50vh - 15%) auto;
+    margin: calc(50vh - 10%) auto;
     padding: 30px 50px 30px;
     border-radius: 10px;
 }
@@ -44,8 +44,12 @@ input[type="password"] {
     border-radius: 5px;
 }
 
-.btn_wrap a {
+.btn_wrap {
     display: inline-block;
+}
+
+.btn_wrap button {
+    display: block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 5px 10px;
     background-color: lightblue;
@@ -56,10 +60,27 @@ input[type="password"] {
 
 }
 
+.btn_wrap button span {
+    font-size: 16px;
+}
+
+#newAccount {
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 10px;
+    background-color: lightblue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
 
 /* 버튼 링크에 호버 효과 */
-.btn_wrap a:hover,
-.btn_wrap a button:hover {
+
+.btn_wrap button:hover,
+#newAccount:hover {
+    cursor: pointer;
     background-color: rgb(84, 178, 209)
         /* 호버 시 배경색 변경 */
 }
@@ -76,33 +97,34 @@ input[type="password"] {
 /* =============================================== */
 /* 아이디 비밀번호 찾기 창 */
 .findIdPw {
-    display: inline-block;
-    margin-top: -20%;
+    position: relative;
+    top: 5px;
+
     font-size: 12px;
+    text-align: center;
 }
 
-
-.findIdPw a {
-    text-decoration: none;
-    color: gray;
-
+.findIdPw a:nth-of-type(1) {
+    border-right: gray;
 }
 
-.findIdPw label:hover {
-    text-decoration: none;
-    color: gray;
-    cursor: pointer;
-}
-
+.findIdPw a,
 .findIdPw a:visited {
     text-decoration: none;
     color: gray;
+
 }
 
-.findIdPw>label {
-    font-size: 50%;
-    position: relative;
-    bottom: 5px;
-    color: gray;
+.findIdPw a:hover {
+    text-decoration: none;
+    color: lightslategray;
+    font-weight: bolder;
+    cursor: pointer;
+}
 
+@media screen and (max-width: 768px) {
+    #login_wrap {
+        width: 40vh;
+        margin: calc((50vh - 10%) / 2) auto;
+    }
 }

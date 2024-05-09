@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset</title>
+    <link rel="stylesheet" href="../../source/css/logo.css">
+    <link rel="stylesheet" href="../../source/css/findIdPw.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="../menu/menu.html"> <img src="/source/images/LOGO.svg" class="logo" alt="logo"></a>
+        </div>
+    </header>
+
+    <div id="find_pw_wrap">
+        <div id="findPw_wrap">
+            <div id="find_pw_title">Find PW</div>
+            <form id="findPw_form" validate>
+
+                <div class="input_wrap">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="input_wrap">
+                    <label for="email">Email</label>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <button id="send">Send</button>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <button type="submit">Find</button>
+                </div>
+            </form>
+            <div class="findIdPw">
+                <a href="../auth/findId.html">Find ID | <a href="../auth/index.html" target="_self">Sign In</a></a> | <a
+                    href="../auth/sign_up.html">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

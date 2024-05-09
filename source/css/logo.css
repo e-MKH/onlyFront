@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+
+    user-select: none;
 }
 
 body {
@@ -12,7 +14,7 @@ body {
 }
 
 .logo {
-    width: 400px;
+    width: 23vw;
     margin: 20px 0;
 }
 
@@ -60,6 +62,8 @@ footer {
     height: 50px;
 
     grid-template: 1fr / 130px 8fr 1fr;
+
+    user-select: none;
 }
 
 .container div {
@@ -80,7 +84,7 @@ footer {
     width: 25px;
     margin: 0 3px;
     fill: gray;
-    
+
 
     transition-duration: 1s;
 }

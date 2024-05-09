@@ -27,46 +27,50 @@
 <body>
     <header>
         <div>
-            <a href="../menu/menu.html"> <img src="/source/images/LOGO.svg" class="logo" alt="logo"></a>
+            <a href="../../index.html"> <img src="/source/images/LOGO.svg" class="logo" alt="logo"></a>
         </div>
     </header>
     <div class="sign_container">
         <div class="sign_wrap">
             <div class="sign_title">Join Us</div>
-            <form class="sign_form" novalidate action="../menu/menu.html">
+            <form class="sign_form" validate action="../menu/menu.html">
                 <div>
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="이름을 입력하세요" value="" required>
                 </div>
-                <div>
+                <div class="email_wrap">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="ID 로 사용할 email" required>
+                    <button id="double_chk">중복확인</button>
                 </div>
                 <div>
-                    <label for="name">Password</label>
+                    <label for="password">Password</label>
                     <input type="password" class="form-control" id="password" placeholder="영문/숫자 포함 최대 12자리"
                         maxlength="12" required>
                 </div>
                 <div>
-                    <label for="name">Password check</label>
-                    <input type="password" class="form-control" id="password" placeholder="영문/숫자 포함 최대 12자리"
+                    <label for="password_chk">Password check</label>
+                    <input type="password" class="form-control" id="password_chk" placeholder="영문/숫자 포함 최대 12자리"
                         maxlength="12" required>
                 </div>
 
                 <div>
-                    <label><strong>PHONE</strong></label>
+                    <label for="phoneNum"><strong>PHONE</strong></label>
                     <div class="phoneNum">
                         <input type="text" value="010" readonly size="1"><span>&#45;</span>
-                        <input type="text" size="1" minlength="3" maxlength="4" required><span> &#45; </span>
+                        <input type="text" id="phoneNum" size="1" minlength="3" maxlength="4" required><span> &#45;
+                        </span>
                         <input type="text" size="1" minlength="4" maxlength="4" required>
                     </div>
                 </div>
                 <div class="address_wrap">
-
                     <label for="address">Address</label>
                     <input type="text" class="form-control" id="address" placeholder="서울특별시 강남구" required>
                     <button type="button" id="findAddressBtn">주소 찾기</button>
+                    <div>
+                        <input type="text" class="form-control" id="detail_address" placeholder="상세주소" required>
 
+                    </div>
                 </div>
 
                 <div class="agreement">
@@ -90,7 +94,7 @@
                 </div>
 
                 <div class="btn_wrap">
-                    <a href="../menu/menu.html"><button>회원가입</button></a>
+                    <a href="../../index.html"><button>회원가입</button></a>
                 </div>
             </form>
         </div>

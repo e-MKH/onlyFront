@@ -9,7 +9,7 @@
 }
 
 .body div {
-    position: relative;
+    position: absolute;
     left: 50vw;
     top: 50vh;
     width: 100px;
@@ -21,6 +21,10 @@
     font-weight: bold;
 }
 
+a{
+    width: 1px;
+    height: 1px;
+}
 /* ========================================================================================================== */
 
 .box {
@@ -29,7 +33,7 @@
 
 
 .body:hover .box {
-    animation: ani 4s  infinite alternate;
+    animation: ani 5s  infinite alternate;
 }
 
 @keyframes ani {
@@ -50,7 +54,7 @@
         transform: translate(100%, 200%) scale(0.3, 0.2);
     }
     10% {
-        transform: translate(300%, 100%) scale(0.9, 0.7);
+        transform: translate(300%, 100%) scale(0.7, 0.7);
         background-color: black;
     }
     20% {
@@ -78,12 +82,12 @@
         transform: translate(100%, -100%) scale(0.3, 0.2);
     }
     50% {
-        transform: translate(-50%, 100%) rotate(270deg);
+        transform: translate(-50%, 100%) scale(0.1);
         background-color: aliceblue;
 
     }
     60% {
-        transform: translate(200%, 70%) scale(1.2);
+        transform: translate(200%, 70%) scale(0.7);
     }
     70% {
         transform: translate(-250%, -90%) scale(0.3);
